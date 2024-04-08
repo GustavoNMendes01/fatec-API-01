@@ -1,0 +1,48 @@
+Algoritmo "Caluculadora cientifica API 1�-semestre"
+
+var
+op:inteiro
+total:real
+
+
+Inicio
+escreval("digite qual tipo de opera��o deseja realizar")
+escreval("1 - opera��es b�sicas +-*/")
+escreval("2 - c�lculo fatorial")
+escreval("3 - fun��o de segundo gral")
+escreval("4 - convers�o de base n�merica")
+escreval("5 - concatena��o de 2 strings")
+escreval("6 - juros simples")
+escreval("7 - juros compostos")
+escreval("8 - sair")
+leia(op)
+limpatela
+        escolha op
+        caso 1
+        caso 2
+        caso 3
+        caso 4
+        caso 5
+        caso 6
+        caso 7
+        fimescolha
+escreval("o resultado �: ", total)
+repita
+escreval("digite qual tipo de opera��o deseja realizar")
+escreval("1 - opera��es b�sicas +-*/")
+escreval("2 - c�lculo fatorial")
+escreval("3 - fun��o de segundo gral")
+escreval("4 - convers�o de base n�merica")
+escreval("5 - concatena��o de 2 strings")
+escreval("6 - juros simples")
+escreval("7 - juros compostos")
+escreval("8 - sair")
+leia(op)
+limpatela
+ate (op = 8)
+
+
+
+
+
+Fimalgoritmo
