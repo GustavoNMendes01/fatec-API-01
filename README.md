@@ -3,7 +3,7 @@
 # Índice 
 
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#Backlog-do-produto)
+* [Backlog do Produto](#Backlog-do-produto)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Autores do Projeto](#Autores)
