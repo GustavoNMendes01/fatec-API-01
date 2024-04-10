@@ -1,4 +1,4 @@
-Algoritmo "Caluculadora cientifica API 1�-semestre"
+Algoritmo "Caluculadora cientifica API 1?-semestre"
 
 var
 op:inteiro
@@ -6,18 +6,25 @@ total:real
 
 
 Inicio
-escreval("digite qual tipo de opera��o deseja realizar")
-escreval("1 - opera��es b�sicas +-*/")
-escreval("2 - c�lculo fatorial")
-escreval("3 - fun��o de segundo gral")
-escreval("4 - convers�o de base n�merica")
-escreval("5 - concatena��o de 2 strings")
-escreval("6 - juros simples")
-escreval("7 - juros compostos")
-escreval("8 - sair")
-leia(op)
-limpatela
-        escolha op
+
+repita
+      escreval("- - - CALCULADORA CIENTÍFICA - - -")
+      escreval("")
+      escreval("1 - Operações básicas (+-*/)")
+      escreval("2 - Cálculo fatorial")
+      escreval("3 - Função de segundo grau")
+      escreval("4 - Conversão de base numérica")
+      escreval("5 - Concatenação de 2 strings")
+      escreval("6 - Juros simples")
+      escreval("7 - Juros compostos")
+      escreval("8 - Sair")
+      escreval("")
+
+      escreva("Digite qual tipo de operação deseja realizar:")
+      leia(op)
+      limpatela
+
+      escolha op
         caso 1
         caso 2
         caso 3
@@ -25,24 +32,14 @@ limpatela
         caso 5
         caso 6
         caso 7
-        fimescolha
-escreval("o resultado �: ", total)
-repita
-escreval("digite qual tipo de opera��o deseja realizar")
-escreval("1 - opera��es b�sicas +-*/")
-escreval("2 - c�lculo fatorial")
-escreval("3 - fun��o de segundo gral")
-escreval("4 - convers�o de base n�merica")
-escreval("5 - concatena��o de 2 strings")
-escreval("6 - juros simples")
-escreval("7 - juros compostos")
-escreval("8 - sair")
-leia(op)
-limpatela
+      fimescolha
+      
+      escreval("O resultado é: ", total)
+      tempo 4000
+      tempo 0
+      
+      limpatela
+      
 ate (op = 8)
-
-
-
-
 
 Fimalgoritmo
