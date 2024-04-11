@@ -1,9 +1,8 @@
-Algoritmo "Caluculadora CientÍfica API 1º - semestre"
+Algoritmo "Calculadora Científica - API 1º Semestre"
 
 var
-op:inteiro
-total:real
-
+op,op_ob:inteiro
+total, num_ob1, num_ob2, res_ob:real
 
 Inicio
 
@@ -26,6 +25,58 @@ repita
 
       escolha op
               caso 1
+                   escreval("- - - OPERAÇÕES BÁSICAS - - -")
+                   escreval("")
+                   escreval("1 - Soma")
+                   escreval("2 - Subtração")
+                   escreval("3 - Multiplicação")
+                   escreval("4 - Voltar")
+                   escreval("5 - Sair")
+                   escreval("")
+
+                   escreva("Digite qual tipo de operação deseja realizar:")
+                   leia(op_ob)
+                   limpatela
+
+                   escolha op_ob
+                          caso 1
+                               escreva("Insira o primeiro número: ")
+                               leia(num_ob1)
+                               escreva("Insira o segundo número: ")
+                               leia(num_ob2)
+                               total <- num_ob1 + num_ob2
+                               escreval("")
+
+                          caso 2
+                               escreva("Insira o primeiro número: ")
+                               leia(num_ob1)
+                               escreva("Insira o segundo número: ")
+                               leia(num_ob2)
+                               total <- num_ob1 - num_ob2
+                               escreval("")
+
+                          caso 3
+                               escreva("Insira o primeiro número: ")
+                               leia(num_ob1)
+                               escreva("Insira o segundo número: ")
+                               leia(num_ob2)
+                               total <- num_ob1 * num_ob2
+                               escreval("")
+
+                          caso 4
+                               escreva("Insira o primeiro número: ")
+                               leia(num_ob1)
+                               escreva("Insira o segundo número: ")
+                               leia(num_ob2)
+                               total <- num_ob1 / num_ob2
+                               escreval("")
+                               
+                          caso 5
+                               escreva("")
+                               total <- 0
+                               
+                   fimescolha
+
               caso 2
               caso 3
               caso 4
@@ -33,19 +84,19 @@ repita
               caso 6
               caso 7
       fimescolha
-      
+
       se (op = 8) entao
              escreval("Saindo...")
-             tempo 4000
+             tempo 2000
              tempo 0
       senao
              escreval("O resultado é: ", total)
              tempo 4000
              tempo 0
       fimse
-      
+
       limpatela
-      
+
 ate (op = 8)
 
 Fimalgoritmo
