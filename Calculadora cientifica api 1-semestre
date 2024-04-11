@@ -25,13 +25,13 @@ repita
       limpatela
 
       escolha op
-        caso 1
-        caso 2
-        caso 3
-        caso 4
-        caso 5
-        caso 6
-        caso 7
+              caso 1
+              caso 2
+              caso 3
+              caso 4
+              caso 5
+              caso 6
+              caso 7
       fimescolha
       
       escreval("O resultado é: ", total)
