@@ -34,9 +34,15 @@ repita
               caso 7
       fimescolha
       
-      escreval("O resultado é: ", total)
-      tempo 4000
-      tempo 0
+      se (op = 8) entao
+             escreval("Saindo...")
+             tempo 4000
+             tempo 0
+      senao
+             escreval("O resultado é: ", total)
+             tempo 4000
+             tempo 0
+      fimse
       
       limpatela
       
