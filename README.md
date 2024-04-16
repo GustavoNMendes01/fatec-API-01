@@ -7,7 +7,7 @@
 * [Descrição do Projeto e Funcionalidades](#descrição-do-projeto-e-funcionalidades)
 * [Backlog do Produto](#Backlog-do-produto)
 * [Demonstração da Aplicação](#demonstração-da-aplicação)
-* [Autores do Projeto](#Autores)
+* [Autores do Projeto](#Autores-do-projeto)
 
 <br>
 
@@ -39,7 +39,8 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 - [X] Divisão de tarefas entre a equipe;
 - [X] Criação de repositório no Github;
 - [X] Desenvolvimento do código de menu da calculadora;
-- [ ] Desenvolvimento do código de operações básicas.
+- [X] Desenvolvimento do código de operações básicas.
+<br>
 
 ### Sprint 2. Desenvolvimento do Projeto
 - [ ] Desenvolvimento do código para operação de cálculo fatorial;
@@ -48,11 +49,13 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 - [ ] Desenvolvimento de código para função de concatenação de duas strings;
 - [ ] Desenvolvimento de código para função de juros simples e compostos;
 - [ ] Revisão e teste dos códigos.
-      
+<br>
+
 ### Sprint 3 . Desenvolvimento do Projeto
 - [ ] Revisão dos códigos e necessidades;
 - [ ] Avaliação do desempenho da equipe e prioridades;
 - [ ] Início do uso de Typescript para o desenvolvimento do produto final;
+<br>
 
 ### Sprint 4. Finaização do Projeto
 - [ ] Avaliação do desempenhos da equipe e prioridades;
