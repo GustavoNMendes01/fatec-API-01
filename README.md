@@ -32,7 +32,30 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
           
 <br>
 
+<div align="center">
+          
 # Backlog do produto
+          
+| ID da Tarefa  | Descrição da Tarefa | Prioridade | Valor para o Projeto |
+| :-----------: | :-----------------: | :--------: | :------------------: |
+|001| Definição dos Critérios de Permanência |🔴||                      
+|002| Divisão de tarefas entre a equipe |🟡||                      
+|003| Criação de Repositório no GitHub |🟢||                     
+|004| Desenvolvimento do código de Menu |🟢||
+|005| Desenvolvimento do código de Operações Básicas |🟢||
+|006| Desenvolvimento do código para operação de cálculo Fatorial |🟢||
+|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟢||
+|008| |🟢||
+|009| |🟢||
+|010| |🟢||
+|011| |🟢||
+|012| |🟢||
+|013| |🟢||
+|014| |🟢||
+|015| |🟢||
+
+</div>
+
 
 ### Sprint 1. Concepção e Planejamento de Sprints
 - [X] Definição dos critérios de permanência na equipe;
