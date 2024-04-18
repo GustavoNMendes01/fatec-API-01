@@ -45,24 +45,22 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 |005| Desenvolvimento do código de Operações Básicas |🟢||
 |006| Desenvolvimento do código para operação de cálculo Fatorial |🟢||
 |007| Desenvolvimento do código para cálculo de operação do 2º grau |🟢||
-|008| |🟢||
-|009| |🟢||
-|010| |🟢||
-|011| |🟢||
-|012| |🟢||
-|013| |🟢||
-|014| |🟢||
-|015| |🟢||
+|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟢||
+|009| Desenvolvimento do código para concatenação de Strings|🟢||
+|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟢||
+|011| Reescrita dos códigos feitos para TypeScript|🟢||
+|012| Avaliação do Desempenho da Equipe e Prioridades|🟢||
+|013| Revisão dos códigos e testes|🟢||
 
 </div>
 
-
+# Backlog por Sprint 
 ### Sprint 1. Concepção e Planejamento de Sprints
-- [X] Definição dos critérios de permanência na equipe;
-- [X] Divisão de tarefas entre a equipe;
-- [X] Criação de repositório no Github;
-- [X] Desenvolvimento do código de menu da calculadora;
-- [X] Desenvolvimento do código de operações básicas.
+- [X] 001 | Definição dos critérios de permanência na equipe;
+- [X] 002 | Divisão de tarefas entre a equipe;
+- [X] 003 | Criação de repositório no Github;
+- [X] 004 | Desenvolvimento do código de menu da calculadora;
+- [X] 005 | Desenvolvimento do código de operações básicas.
 <br>
 
 ### Sprint 2. Desenvolvimento do Projeto
