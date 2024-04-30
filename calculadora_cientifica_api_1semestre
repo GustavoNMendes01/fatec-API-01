@@ -23,102 +23,103 @@ JC, JI, J: real
 
 //Função para POTÊNCIA
 funcao potencia(x,y: real): real  //Sendo 'x' a base e 'y' o expoente.
-       var res1, cont: real
-       inicio
+     var res1, cont: real
+     inicio
 
-             res1 <-1
-             cont <- 1
+          res1 <-1
+          cont <- 1
 
-             enquanto (cont <= y) faca
-                      res1 <- res1 * x
-                      cont <- cont + 1
-             fimenquanto
+          enquanto (cont <= y) faca
+               res1 <- res1 * x
+               cont <- cont + 1
+          fimenquanto
 
-             retorne res1
+          retorne res1
 fimfuncao
 
 
 Inicio
 
 repita
-      escreval("- - - CALCULADORA CIENTÍFICA - - -")
-      escreval("")
-      escreval("1 - Operações básicas (+-*/)")
-      escreval("2 - Cálculo fatorial")
-      escreval("3 - Função de segundo grau")
-      escreval("4 - Conversão de base numérica")
-      escreval("5 - Concatenação de 2 strings")
-      escreval("6 - Juros simples e compostos")
-      escreval("7 - Sair")
-      escreval("")
 
-      escreva("Digite qual tipo de operação deseja realizar:")
-      leia(op)
-      limpatela
+     escreval("- - - CALCULADORA CIENTÍFICA - - -")
+     escreval("")
+     escreval("1 - Operações básicas (+-*/)")
+     escreval("2 - Cálculo fatorial")
+     escreval("3 - Função de segundo grau")
+     escreval("4 - Conversão de base numérica")
+     escreval("5 - Concatenação de 2 strings")
+     escreval("6 - Juros simples e compostos")
+     escreval("7 - Sair")
+     escreval("")
 
-      escolha op
-              //OPERAÇÕES BÁSICAS
-              caso 1
-                   escreval("- - - OPERAÇÕES BÁSICAS - - -")
-                   escreval("")
-                   escreval("1 - Soma")
-                   escreval("2 - Subtração")
-                   escreval("3 - Multiplicação")
-                   escreval("4 - Divisão")
-                   escreval("5 - Sair")
-                   escreval("")
+     escreva("Digite qual tipo de operação deseja realizar:")
+     leia(op)
+     limpatela
 
-                   escreva("Digite qual tipo de operação deseja realizar:")
-                   leia(op_ob)
-                   limpatela
+     escolha op
+          //OPERAÇÕES BÁSICAS
+               caso 1
+                    escreval("- - - OPERAÇÕES BÁSICAS - - -")
+                    escreval("")
+                    escreval("1 - Soma")
+                    escreval("2 - Subtração")
+                    escreval("3 - Multiplicação")
+                    escreval("4 - Divisão")
+                    escreval("5 - Sair")
+                    escreval("")
 
-                   escolha op_ob
-                          caso 1
-                               escreva("Insira o primeiro número: ")
-                               leia(num_ob1)
-                               escreva("Insira o segundo número: ")
-                               leia(num_ob2)
-                               total <- num_ob1 + num_ob2
-                               escreval("")
+                    escreva("Digite qual tipo de operação deseja realizar:")
+                    leia(op_ob)
+                    limpatela
 
-                          caso 2
-                               escreva("Insira o primeiro número: ")
-                               leia(num_ob1)
-                               escreva("Insira o segundo número: ")
-                               leia(num_ob2)
-                               total <- num_ob1 - num_ob2
-                               escreval("")
+                    escolha op_ob
+                         caso 1
+                              escreva("Insira o primeiro número: ")
+                              leia(num_ob1)
+                              escreva("Insira o segundo número: ")
+                              leia(num_ob2)
+                              total <- num_ob1 + num_ob2
+                              escreval("")
+
+                         caso 2
+                              escreva("Insira o primeiro número: ")
+                              leia(num_ob1)
+                              escreva("Insira o segundo número: ")
+                              leia(num_ob2)
+                              total <- num_ob1 - num_ob2
+                              escreval("")
 
                           caso 3
-                               escreva("Insira o primeiro número: ")
-                               leia(num_ob1)
-                               escreva("Insira o segundo número: ")
-                               leia(num_ob2)
-                               total <- num_ob1 * num_ob2
-                               escreval("")
+                              escreva("Insira o primeiro número: ")
+                              leia(num_ob1)
+                              escreva("Insira o segundo número: ")
+                              leia(num_ob2)
+                              total <- num_ob1 * num_ob2
+                              escreval("")
 
                           caso 4
-                               escreva("Insira o primeiro número: ")
-                               leia(num_ob1)
-                               escreva("Insira o segundo número: ")
-                               leia(num_ob2)
-                               total <- num_ob1 / num_ob2
-                               escreval("")
+                              escreva("Insira o primeiro número: ")
+                              leia(num_ob1)
+                              escreva("Insira o segundo número: ")
+                              leia(num_ob2)
+                              total <- num_ob1 / num_ob2
+                              escreval("")
 
                           caso 5
-                               escreva("")
-                               total <- 0
+                              escreva("")
+                              total <- 0
 
                    fimescolha
 
-              caso 2
-              caso 3
-              caso 4
-              caso 5
-              
-              //JUROS SIMPLES E COMPOSTOS
-              caso 6
-              
+               caso 2
+               caso 3
+               caso 4
+               caso 5
+
+               //JUROS SIMPLES E COMPOSTOS
+               caso 6
+
                     escreval("- - - - - JUROS SIMPLES E COMPOSTO  - - - -")
                     escreval("")
 
@@ -131,59 +132,60 @@ repita
 
                     enquanto ((op_j <= 2) e (op_j <> 0)) faca
 
-                          se (op_j = 1) entao
-                                escreval("- - - - - - - JUROS SIMPLES - - - - - - - -")
-                                escreval("")
+                         se (op_j = 1) entao
 
-                                escreva("Insira o Capital Inicial (em R$): ")
-                                leia(JC)
-                                escreva("Insira a Taxa de Juros (em %): ")
-                                leia(JI)
-                                escreva("Insira o Prazo (em meses): ")
-                                leia(JT)
+                              escreval("- - - - - - - JUROS SIMPLES - - - - - - - -")
+                              escreval("")
 
-                                J <- JC * (JI/100) * JT
+                              escreva("Insira o Capital Inicial (em R$): ")
+                              leia(JC)
+                              escreva("Insira a Taxa de Juros (em %): ")
+                              leia(JI)
+                              escreva("Insira o Prazo (em meses): ")
+                              leia(JT)
 
-                                escreval("")
-                                escreval ("O valor do juros total será de: R$", J:6:2)
+                              J <- JC * (JI/100) * JT
 
-                                op_j <- 0
-                        fimse
+                              escreval("")
+                              escreval ("O valor do juros total será de: R$", J:6:2)
 
-                        se (op_j = 2) entao
-                                escreval("- - - - - - - JUROS COMPOSTO  - - - - - - -")
-                                escreval("")
+                              op_j <- 0
+                         fimse
 
-                                escreva("Insira o Capital Inicial (em R$): ")
-                                leia(JC)
-                                escreva("Insira a Taxa de Juros (em %): ")
-                                leia(JI)
-                                escreva("Insira o Prazo (em meses): ")
-                                leia(JT)
+                         se (op_j = 2) entao
+                              escreval("- - - - - - - JUROS COMPOSTO  - - - - - - -")
+                              escreval("")
 
-                                J <- JC * potencia((1+(JI/100)),JT)
+                              escreva("Insira o Capital Inicial (em R$): ")
+                              leia(JC)
+                              escreva("Insira a Taxa de Juros (em %): ")
+                              leia(JI)
+                              escreva("Insira o Prazo (em meses): ")
+                              leia(JT)
 
-                                escreval("")
-                                escreval ("O valor do montante com juros no total será de: R$", J:6:2)
+                              J <- JC * potencia((1+(JI/100)),JT)
 
-                                op_j <- 0
-                           fimse
+                              escreval("")
+                              escreval ("O valor do montante com juros no total será de: R$", J:6:2)
+
+                              op_j <- 0
+                         fimse
 
                     fimenquanto
 
-      fimescolha
+     fimescolha
 
-      se (op = 7) entao
-             escreval("Saindo...")
-             tempo 2000
-             tempo 0
-      senao
-             escreval("O resultado é: ", total)
-             tempo 4000
-             tempo 0
-      fimse
+     se (op = 7) entao
+          escreval("Saindo...")
+          tempo 2000
+          tempo 0
+     senao
+          escreval("O resultado é: ", total)
+          tempo 4000
+          tempo 0
+     fimse
 
-      limpatela
+     limpatela
 
 ate (op = 7)
 
