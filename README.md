@@ -36,21 +36,23 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
           
 # Backlog do produto
           
-| ID da Tarefa  | Descrição da Tarefa | Prioridade | Valor para o Projeto |
-| :-----------: | :-----------------: | :--------: | :------------------: |
-|001| Definição dos Critérios de Permanência |🔴||                      
-|002| Divisão de tarefas entre a equipe |🟡||                      
-|003| Criação de Repositório no GitHub |🟢||                     
-|004| Desenvolvimento do código de Menu |🟢||
-|005| Desenvolvimento do código de Operações Básicas |🟢||
-|006| Desenvolvimento do código para operação de cálculo Fatorial |🟢||
-|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟢||
-|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟢||
-|009| Desenvolvimento do código para concatenação de Strings|🟢||
-|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟢||
-|011| Reescrita dos códigos feitos para TypeScript|🟢||
-|012| Avaliação do Desempenho da Equipe e Prioridades|🟢||
-|013| Revisão dos códigos e testes|🟢||
+| ID da Tarefa  | Descrição da Tarefa | Prioridade | Valor para o Projeto | Status |
+| :-----------: | :-----------------: | :--------: | :------------------: | :----: |
+|001| Definição dos Critérios de Permanência |🔴||✅|                      
+|002| Divisão de tarefas entre a equipe |🟡||✅|                      
+|003| Criação de Repositório no GitHub |🟢||✅|                     
+|004| Desenvolvimento do código de Menu |🟢||✅|
+|005| Desenvolvimento do código de Operações Básicas |🟢||✅|
+|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|||
+|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|||
+|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|||
+|009| Desenvolvimento do código para concatenação de Strings|🟡|||
+|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡||✅|
+|011| Reescrita dos códigos feitos para TypeScript|🟢|||
+|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|||
+|013| Revisão dos códigos e testes|🟢|||
+|014| Definição de padrão de variáveis para o código|🔴|||
+|015| Criação de Interface em HTML para o código final em Typescript|🟢|||
 
 </div>
 
@@ -64,23 +66,25 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 <br>
 
 ### Sprint 2. Desenvolvimento do Projeto
-- [ ] Desenvolvimento do código para operação de cálculo fatorial;
-- [ ] Desenvolvimento de código para operação de segundo grau;
-- [ ] Desenvolvimento de código para operação de conversão de base numérica;
-- [ ] Desenvolvimento de código para função de concatenação de duas strings;
-- [ ] Desenvolvimento de código para função de juros simples e compostos;
-- [ ] Revisão e teste dos códigos.
+- [ ] 006 | Desenvolvimento do código para operação de cálculo fatorial;
+- [ ] 007 | Desenvolvimento de código para operação de segundo grau;
+- [X] 010 | Desenvolvimento de código para função de juros simples e compostos;
+- [ ] 013 | Revisão e teste dos códigos;
+- [ ] 014 | Definição de padrão de variáveis para o código.
 <br>
 
 ### Sprint 3 . Desenvolvimento do Projeto
-- [ ] Revisão dos códigos e necessidades;
-- [ ] Avaliação do desempenho da equipe e prioridades;
-- [ ] Início do uso de Typescript para o desenvolvimento do produto final;
+- [ ] 008 | Desenvolvimento de código para operação de conversão de base numérica;
+- [ ] 009 | Desenvolvimento de código para função de concatenação de duas strings;
+- [ ] 013 | Revisão dos códigos e necessidades;
+- [ ] 012 | Avaliação do desempenho da equipe e prioridades;
+- [ ] 011 | Início do uso de Typescript para o desenvolvimento do produto final;
 <br>
 
 ### Sprint 4. Finaização do Projeto
-- [ ] Avaliação do desempenhos da equipe e prioridades;
-- [ ] Finalização da escrita dos códigos em Typescript.
+- [ ] 012 | Avaliação do desempenhos da equipe e prioridades;
+- [ ] 015 | Criação de Interface em HTML para o código;
+- [ ] 011 | Finalização da escrita dos códigos em Typescript.
 
 <br>
 
