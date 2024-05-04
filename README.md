@@ -38,21 +38,21 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
           
 | ID da Tarefa  | Descrição da Tarefa | Prioridade | Valor para o Projeto | Status |
 | :-----------: | :-----------------: | :--------: | :------------------: | :----: |
-|001| Definição dos Critérios de Permanência |🔴||✅|                      
-|002| Divisão de tarefas entre a equipe |🟡||✅|                      
-|003| Criação de Repositório no GitHub |🟢||✅|                     
-|004| Desenvolvimento do código de Menu |🟢||✅|
-|005| Desenvolvimento do código de Operações Básicas |🟢||✅|
-|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|||
-|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|||
-|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|||
-|009| Desenvolvimento do código para concatenação de Strings|🟡|||
-|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡||✅|
-|011| Reescrita dos códigos feitos para TypeScript|🟢|||
-|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|||
-|013| Revisão dos códigos e testes|🟢|||
-|014| Definição de padrão de variáveis para o código|🔴|||
-|015| Criação de Interface em HTML para o código final em Typescript|🟢|||
+|001| Definição dos Critérios de Permanência |🔴|01|✅|                      
+|002| Divisão de tarefas entre a equipe |🟡|02|✅|                      
+|003| Criação de Repositório no GitHub |🟢|07|✅|                     
+|004| Desenvolvimento do código de Menu |🟢|15|✅|
+|005| Desenvolvimento do código de Operações Básicas |🟢|14|✅|
+|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|13||
+|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|12|✅|
+|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|11||
+|009| Desenvolvimento do código para concatenação de Strings|🟡|10||
+|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|09|✅|
+|011| Reescrita dos códigos feitos para TypeScript|🟢|08||
+|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|03||
+|013| Revisão dos códigos e testes|🟢|05||
+|014| Definição de padrão de variáveis para o código|🔴|04|✅|
+|015| Criação de Interface em HTML para o código final em Typescript|🟢|06||
 
 </div>
 
@@ -67,10 +67,10 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 
 ### Sprint 2. Desenvolvimento do Projeto
 - [ ] 006 | Desenvolvimento do código para operação de cálculo fatorial;
-- [ ] 007 | Desenvolvimento de código para operação de segundo grau;
+- [X] 007 | Desenvolvimento de código para operação de segundo grau;
 - [X] 010 | Desenvolvimento de código para função de juros simples e compostos;
-- [ ] 013 | Revisão e teste dos códigos;
-- [ ] 014 | Definição de padrão de variáveis para o código.
+- [X] 013 | Revisão e teste dos códigos;
+- [X] 014 | Definição de padrão de variáveis para o código.
 <br>
 
 ### Sprint 3 . Desenvolvimento do Projeto
