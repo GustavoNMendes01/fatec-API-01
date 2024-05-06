@@ -15,7 +15,7 @@ coef1, coef2, coef3, delta, x1, x2: real
 continuar: caractere
 
 //Variáveis FATORIAL
-
+numero, fatorial, contador: real
 
 //Variáveis CONCATENAÇÃO
 
@@ -171,7 +171,59 @@ repita
 
                    fimescolha
 
+               //CÁLCULO FATORIAL
                caso 2
+
+               S_N <- "S"
+
+               repita
+
+                    escreval("- - - - CÁLCULO FATORIAL - - - -")
+                    escreval
+
+                    escreval("Digite um número para calcular o fatorial: ")
+                    leia(numero)
+
+                    se numero < 0 entao
+                         repita
+                              escreval("Não é possível calcular o fatorial de um número negativo.")
+                              escreval
+                              escreval("Digite outro número:")
+                              leia(numero)
+                         ate numero >= 0
+                    fimse
+
+                    se numero = 0 então
+                         escreval("O fatorial de 0 é igual à 1.")
+                    fimse
+
+                    fatorial <- 1
+                    contador <- 1
+
+                    enquanto contador <= numero faça
+                         fatorial <- fatorial * contador
+                         contador <- contador + 1
+                    fimEnquanto
+
+                    escreval("O fatorial de ", numero, " é: ", fatorial)
+
+
+                    escreval("Deseja calcular o fatorial de outro número?")
+                    escreval("Sim - Digite (S) / Não - Digite (N)")
+                    leia(S_N)
+
+                    se (S_N = "S") ou (S_N = "s") entao
+
+                         limpatela
+
+                    fimse
+
+               ate (S_N <> "S") ou (S_N = "s")
+
+               escreval
+               escreval("Pressione qualquer tecla para retornar ao menu.")
+               leia(retorno)
+               limpatela
 
                //EQUAÇÃO DE 2 GRAU
                caso 3
@@ -254,7 +306,7 @@ repita
                     limpatela
                     escreval("- - - CONVERSÃO DE BASE NUMÉRICA - - -")
                     escreval
-                    
+
                     escreval("Qual tipo de conversão você deseja realizar?")
                     escreval("--------------------------------")
                     escreval("B10XB2 - Decimal para Binário - Digite (1)")
@@ -276,7 +328,7 @@ repita
                               repita
                                    escreval("- - - - - - - - B10XB2 - - - - - - - -")
                                    escreval
-                                   
+
                                    escreval("Digite um número para converter de Decimal para Binário: ")
                                    escreva("Decimal: " )
                                    leia(dec)
