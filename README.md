@@ -43,7 +43,7 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 |003| Criação de Repositório no GitHub |🟢|07|✅|                     
 |004| Desenvolvimento do código de Menu |🟢|15|✅|
 |005| Desenvolvimento do código de Operações Básicas |🟢|14|✅|
-|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|13||
+|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|13|✅|
 |007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|12|✅|
 |008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|11||
 |009| Desenvolvimento do código para concatenação de Strings|🟡|10||
@@ -66,7 +66,7 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 <br>
 
 ### Sprint 2. Desenvolvimento do Projeto
-- [ ] 006 | Desenvolvimento do código para operação de cálculo fatorial;
+- [X] 006 | Desenvolvimento do código para operação de cálculo fatorial;
 - [X] 007 | Desenvolvimento de código para operação de segundo grau;
 - [X] 010 | Desenvolvimento de código para função de juros simples e compostos;
 - [X] 013 | Revisão e teste dos códigos;
