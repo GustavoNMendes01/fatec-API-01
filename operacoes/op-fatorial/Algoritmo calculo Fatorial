@@ -1,0 +1,27 @@
+Algoritmo "calculofatorial"
+Var
+   numero, fatorial, contador: Inteiro
+
+Inicio
+   escreval("Digite um número para calcular o fatorial: ")
+   leia(numero)
+
+   se numero < 0 entao
+   repita
+      escreval("Não é possível calcular o fatorial de um número negativo.")
+      escreval("Digite outro número:")
+   leia(numero)
+   ate numero >= 0
+   fimse
+   se numero = 0 então
+      escreval("O fatorial de 0 é 1.")
+   fimse
+      fatorial <- 1
+      contador <- 1
+   enquanto contador <= numero faça
+         fatorial <- fatorial * contador
+         contador <- contador + 1
+   fimEnquanto
+       escreval("O fatorial de ", numero, " é: ", fatorial)
+
+FimAlgoritmo
