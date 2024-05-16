@@ -38,21 +38,21 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
           
 | ID da Tarefa  | Descrição da Tarefa | Prioridade | Sprint de Entrega | Valor para o Projeto | Status |
 | :-----------: | :-----------------: | :--------: | :---------------: | :------------------: | :----: |
-|001| Definição dos Critérios de Permanência |🔴|1|01|✅|                      
-|002| Divisão de tarefas entre a equipe |🟡|1|02|✅|                      
-|003| Criação de Repositório no GitHub |🟢|1|07|✅|                     
-|004| Desenvolvimento do código de Menu |🟢|1|15|✅|
-|005| Desenvolvimento do código de Operações Básicas |🟢|1|14|✅|
-|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|2|13|✅|
-|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|2|12|✅|
-|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|3|11||
-|009| Desenvolvimento do código para concatenação de Strings|🟡|3|10||
-|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|2|09|✅|
-|011| Reescrita dos códigos feitos para TypeScript|🟢|3|08||
-|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|03||
-|013| Revisão dos códigos e testes|🟢|2|05||
-|014| Definição de padrão de variáveis para o código|🔴|2|04|✅|
-|015| Criação de Interface em HTML para o código final em Typescript|🟢|4|06||
+|001| Definição dos Critérios de Permanência |🔴|14|01|✅|                      
+|002| Divisão de tarefas entre a equipe |🟡|1|13|✅|                      
+|003| Criação de Repositório no GitHub |🟢|1|08|✅|                     
+|004| Desenvolvimento do código de Menu |🟢|1|00|✅|
+|005| Desenvolvimento do código de Operações Básicas |🟢|1|01|✅|
+|006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|2|02|✅|
+|007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|2|03|✅|
+|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|3|04||
+|009| Desenvolvimento do código para concatenação de Strings|🟡|3|05||
+|010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|2|06|✅|
+|011| Reescrita dos códigos feitos para TypeScript|🟢|3|07||
+|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|12||
+|013| Revisão dos códigos e testes|🟢|2|10||
+|014| Definição de padrão de variáveis para o código|🔴|2|11|✅|
+|015| Criação de Interface em HTML para o código final em Typescript|🟢|4|09||
 
 </div>
 
