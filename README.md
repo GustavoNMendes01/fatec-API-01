@@ -45,14 +45,14 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 |005| Desenvolvimento do código de Operações Básicas |🟢|1|01|✅|
 |006| Desenvolvimento do código para operação de cálculo Fatorial |🟡|2|02|✅|
 |007| Desenvolvimento do código para cálculo de operação do 2º grau |🟡|2|03|✅|
-|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|3|04||
-|009| Desenvolvimento do código para concatenação de Strings|🟡|3|05||
+|008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|3|04|✅|
+|009| Desenvolvimento do código para concatenação de Strings|🟡|3|05|✅|
 |010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|2|06|✅|
 |011| Reescrita dos códigos feitos para TypeScript|🟢|3|07||
-|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|12||
+|012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|12|✅|
 |013| Revisão dos códigos e testes|🟢|2|10||
 |014| Definição de padrão de variáveis para o código|🔴|2|11|✅|
-|015| Criação de Interface em HTML para o código final em Typescript|🟢|4|09||
+|015| Criação de Interface em HTML para o código final em Typescript|🟢|4|09|✅|
 
 </div>
 
@@ -74,10 +74,11 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 <br>
 
 ### Sprint 3 . Desenvolvimento do Projeto
-- [ ] 008 | Desenvolvimento de código para operação de conversão de base numérica;
-- [ ] 009 | Desenvolvimento de código para função de concatenação de duas strings;
-- [ ] 013 | Revisão dos códigos e necessidades;
-- [ ] 012 | Avaliação do desempenho da equipe e prioridades;
+- [X] 015 | Criação de Interface em HTML para o código;
+- [X] 008 | Desenvolvimento de código para operação de conversão de base numérica;
+- [X] 009 | Desenvolvimento de código para função de concatenação de duas strings;
+- [X] 013 | Revisão dos códigos e necessidades;
+- [X] 012 | Avaliação do desempenho da equipe e prioridades;
 - [ ] 011 | Início do uso de Typescript para o desenvolvimento do produto final;
 <br>
 
