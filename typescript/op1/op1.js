@@ -16,25 +16,36 @@ function op6(id) {
     var op = Number(leia("qual operação deseja realizar?\n 1-Adição \n 2-Subtração \n 3-multiplicação \n 4-divisão"));
     switch (op) {
         case 1:
-            var num1 = Number(leia("insira o primeiro valor"));
-            var num2 = Number(leia("insira o segundo valor"));
+            var num1 = Number(leia("Insira o primeiro valor:"));
+            var num2 = Number(leia("Insira o segundo valor:"));
             var total = num1 + num2;
-            escreva("a soma dos numeros é:" + total);
+            escreva("A SOMA dos números é:" + total);
+            fechar();
             break;
         case 2:
-            var num1 = Number(leia("insira o primeiro valor"));
-            var num2 = Number(leia("insira o segundo valor"));
+            var num1 = Number(leia("Insira o primeiro valor:"));
+            var num2 = Number(leia("Insira o segundo valor:"));
             var total = num1 - num2;
-            escreva("a subtração dos números é:" + total);
+            escreva("A SUBTRAÇÃO dos números é:" + total);
+            fechar();
+            break;
         case 3:
-            var num1 = Number(leia("insira o primeiro valor"));
-            var num2 = Number(leia("insira o segundo valor"));
+            var num1 = Number(leia("Insira o primeiro valor:"));
+            var num2 = Number(leia("Insira o segundo valor:"));
             var total = num1 * num2;
-            escreva("a multiplicação dos numeros é:" + total);
+            escreva("A MULTIPLICAÇÃO dos números é:" + total);
+            fechar();
+            break;
         case 4:
-            var num1 = Number(leia("insira o primeiro valor"));
-            var num2 = Number(leia("insira o segundo valor"));
+            var num1 = Number(leia("Insira o primeiro valor:"));
+            var num2 = Number(leia("Insira o segundo valor:"));
             var total = num1 / num2;
-            escreva("a divisão dos numeros é:" + total);
+            escreva("a DIVISÃO dos números é:" + total);
+            fechar();
+            break;
+        default:
+            escreva(`Operação inválida.`);
+            fechar();
+            break;
     }
 }
