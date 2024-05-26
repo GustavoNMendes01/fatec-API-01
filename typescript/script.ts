@@ -15,7 +15,7 @@ function op111(id: number){
         return myWindow?.close()
     }
 
-    var op = Number(leia("qual operação deseja realizar?\n 1-Adição \n 2-Subtração \n 3-multiplicação \n 4-divisão"))
+    var op = Number(leia("Qual operação deseja realizar?\n 1-Adição \n 2-Subtração \n 3-Multiplicação \n 4-Divisão"))
 
     switch (op) {
         case 1:
@@ -57,7 +57,7 @@ function op111(id: number){
             
             var total = num1 / num2;
             
-            escreva("a DIVISÃO dos números é:" + total);
+            escreva("A DIVISÃO dos números é:" + total);
             fechar();
             
             break;
@@ -101,10 +101,6 @@ function op2222(id) {
     }
 }
 
-
-
-
-
 function op4444(id: number) {
     //INÍCIO - PARTE PADRÃO
     let myWindow = window.open('', 'Calculadora Científica', 'toolbar=0,location=0,menubar=0,width=500,height=300');
@@ -113,16 +109,23 @@ function op4444(id: number) {
     }
     function escreva(texto: string) {
         return (myWindow?.alert(texto))
+    }
+    function fechar() {
+        return myWindow?.close()
     };
 
-    let op = Number(leia("Conversão de Bases Númericas. \n 1 - B10XB2 - Decimal para Binário. \n 2 - B2XB10 - Binário para Decimal. \n 3 - B2XB16 - Binário para Hexadecimal."))
-
+    let op = Number(leia(`Conversão de Bases Númericas. 
+    1 - B10XB2 - Decimal para Binário. 
+    2 - B2XB10 - Binário para Decimal. 
+    3 - B2XB8 - Binário para Octal. ***
+    4 - B8XB2 - Octal para Binário. ***
+    5 - B2XB16 - Binário para Hexadecimal.
+    6 - B16XB2 - Hexadecimal para Binário.***`))
 
     switch (op) {
-    case 1:
-         function B10XB2() {
-                console.log("Conversão de Decimal para Binário");
-                let d = String(leia("Digite um número para converter de Decimal para Binário: "));
+        case 1:
+            function B10XB2() {
+                let d = String(leia("Conversão de Decimal para Binário. \nDigite um número para converter de Decimal para Binário: "));
                 let n = Number(d);
                 let dec = Number(d);
                 let resultado = String();
@@ -135,19 +138,16 @@ function op4444(id: number) {
                     }
                     n = Math.floor(n / 2);
                 }
-                escreva(`A conversão do número decimal: ${dec}, corresponde ao número binário: ${resultado}`);
+                escreva(`A conversão do número decimal: ${dec}\nCorresponde ao número binário: ${resultado}`);
+                fechar();
             };
-
-             B10XB2()
+            B10XB2()
+      
             break;
-            
+
         case 2:
             function B2XB10() {
-                console.log("Conversão de Binário para Decimal");
-                console.log("Lembre-se que um número binário é composto apenas por (0 e 1).");
-
-                let b = String(leia("Digite um número para converter de Binário para Decimal: "));
-
+                let b = String(leia(`Conversão de Binário para Decimal.\nLembre-se que um número binário é composto apenas por (0 e 1).\nDigite um número para converter de Binário para Decimal: `));
                 let b1 = parseInt(b);
                 let base = (1);
                 let x = (0);
@@ -165,19 +165,36 @@ function op4444(id: number) {
                     base = base * 10
                 }
 
-                escreva(`A conversão do número binário: ${b1}, corresponde ao número decimal: ${dec}`);
+                escreva(`A conversão do número binário: ${b1}\nCorresponde ao número decimal: ${dec}`);
+                fechar();
             };
+            B2XB10()
             break;
 
         case 3:
+            function B2XB8() {
 
+            };
+
+            escreva(`Falta implementar o algortimo`)
+            B2XB8()
+            fechar()
+            break;
+
+        case 4:
+            function B8XB2() {
+
+            };
+
+            escreva(`Falta implementar o algortimo`)
+            B8XB2()
+            fechar()
+            break;
+
+        case 5:
             function B2XB16() {
 
-                console.log("Conversão de Binário para Hexadecimal")
-                console.log("Lembre-se que um número bínario é composto apenas por (0 e 1).")
-
-                let b = String(leia("Digite um número para converter de binário para hexadecimal. "));
-
+                let b = String(leia(`Conversão de Binário para Hexadecimal.\nLembre-se que um número bínario é composto apenas por (0 e 1).\nDigite um número para converter de binário para hexadecimal. `));
                 let b1 = parseFloat(b)
                 let base = 1
                 let resultado = String("")
@@ -252,12 +269,23 @@ function op4444(id: number) {
                     }
                 }
 
-                escreva(`O valor em hexadecimal para o número binário: ${b1}, corresponde a: ${resultado}-h`)
-            }   B2XB16()
-                break;
-                }
-}
+                escreva(`O valor em hexadecimal para o número binário: ${b1}\nCorresponde a: ${resultado}-h`);
+                fechar();
+            } B2XB16()
+            break;
+        case 6:
+            function B16XB2() {
 
+            }
+            escreva(`Falta implementar o algortimo`)
+            B16XB2()
+            break;
+        default:
+            escreva('Inválido')
+            fechar()
+            break;
+    }
+}
 
 function op6666(id: number){
 
