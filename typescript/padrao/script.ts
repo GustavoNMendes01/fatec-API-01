@@ -1,4 +1,4 @@
-function op1(id: number){
+function op111(id: number){
     //INÍCIO - PARTE PADRÃO
     var myWindow = window.open('', 'Calculadora Científica', 'toolbar=0,location=0,menubar=0,width=500,height=300');
     var nomeOp = document.getElementsByTagName('a')[id].innerHTML;
