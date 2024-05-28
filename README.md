@@ -48,7 +48,7 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 |008| Desenvolvimento do código para cálculo de conversão de base numérica|🟡|3|04|✅|
 |009| Desenvolvimento do código para concatenação de Strings|🟡|3|05|✅|
 |010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|2|06|✅|
-|011| Reescrita dos códigos feitos para TypeScript|🟢|3|07||
+|011| Reescrita dos códigos feitos para TypeScript|🟢|3|07|✅|
 |012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|12|✅|
 |013| Revisão dos códigos e testes|🟢|2|10||
 |014| Definição de padrão de variáveis para o código|🔴|2|11|✅|
@@ -79,12 +79,12 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 - [X] 009 | Desenvolvimento de código para função de concatenação de duas strings;
 - [X] 013 | Revisão dos códigos e necessidades;
 - [X] 012 | Avaliação do desempenho da equipe e prioridades;
-- [ ] 011 | Início do uso de Typescript para o desenvolvimento do produto final;
+- [X] 011 | Início do uso de Typescript para o desenvolvimento do produto final;
 <br>
 
 ### Sprint 4. Finaização do Projeto
 - [ ] 012 | Avaliação do desempenhos da equipe e prioridades;
-- [ ] 015 | Criação de Interface em HTML para o código;
+- [X] 015 | Criação de Interface em HTML para o código;
 - [ ] 011 | Finalização da escrita dos códigos em Typescript.
 
 <br>
