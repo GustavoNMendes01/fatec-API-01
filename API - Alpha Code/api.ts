@@ -1,9 +1,9 @@
 /*APRENDIZAGEM POR PROJETOS INTEGRADOS 2024-1
 
 Tema do Semestre: Desenvolvimento de uma solução computacional simples, com ênfase em implementações de 
-algoritmos e lógica de programação 
+algoritmos e lógica de programação.
 
-Título do Desafio: Desenvolvimento e Implementação de uma Calculadora Científica
+Título do Desafio: Desenvolvimento e Implementação de uma Calculadora Científica.
 
 Professor M2: Prof. Fabiano Sabha 
 Professor P2: Prof. Lucas Nadalete
@@ -31,7 +31,7 @@ Para iniciar o algoritmo abra o terminal e execute o seguinte comando.
         Serão instalados arquivos para que o Node possa permitir a interatividade.
 
 PASSO 2
-Declare a seguinte constante.
+No seu código declare a seguinte constante: 
          >> const prompt = require('prompt-sync')({ sigint: true })
 
         Isso permite a interatividade por meio da função "prompt"
@@ -42,18 +42,30 @@ Abra o terminal e execute o seguinte comando
         (Nome do arquivo a ser executado)
     
         Esse comando possibilita o uso da Calculadora Científica.
+
+
+        >>> PENDÊNCIAS - FALTA IMPLEMENTAR ALGORITMO. <<<
+
+        >        3 - Equação do Segundo Grau.
+        >        4 - Conversão de Bases Numéricas. - B2XB8 / B8XB2 / B16XB2
+        >        5 - Concatenação de Duas Strings. 
+        >        6 - Juros Simples e Juros Composto.
+
+
 */
 
 const prompt = require('prompt-sync')({ sigint: true })
-let op = Number(1)
-let op1 = Number(1)
-let s_n = ""
+let op = Number(1)  /* VARIAVEL PARA EXECUTAR A CÁLCULADORA */
+let op1 = Number(1) /* VARIAVEL PARA EXECUTAR AS INTERAÇÕES E NAVEGAÇÃO ENTRE AS OPERAÇÕES MATEMÁTICASS */
+let s_n = ""        /* VARIAVEL PARA REPETIR AS OPERAÇÕES  */
 console.clear()
+
+/* INICIO DA CÁLCULADORA CIENTIFICA - UTILIZADO A FUNÇÃO DOWHILE CORRESPONDENTE A VARIAVEL (OP)*/
 
 do {
     console.log(`
         -------------------
-        >>>> ALPHA CODE<<<<
+        >>>> ALPHA CODE<<<<                                                          
         -------------------
 
         1 - EXECUTAR
@@ -61,6 +73,8 @@ do {
         `)
     console.log('       Informe a operação que deseja realizar: ')
     op = Number(prompt('           >> '));
+
+    /* MENU INTERATIVO - UTILIZADO A FUNÇÃO DOWHILE CORRESPONDENTE A VARIAVEL (OP)*/
 
     switch (op) {
         case 1:
@@ -81,11 +95,14 @@ do {
 
         >>   (0) - Encerrar   <<
 `)
+
+  /* A PARTIR DO MENU USA-SE A VARIAVEL (OP1) PARA IDENTIFICAR O (SWITCH) POR EXEMPLO - 1 - FUNÇÕES BÁSICAS*/
+
                 console.log(`           Informe a operação que deseja realizar: `)
                 op1 = Number(prompt(`           >> `));
                 op = op1
                 switch (op1) {
-                    case 1:
+                    case 1:                          /* <<<< FUNÇÕES BÁSICAS */
                         console.clear();
                         while (op1 !== 0) {
                             console.log(`
@@ -99,11 +116,14 @@ do {
 
         >> (0) - Retornar ao Menu Principal <<
         `);
+
+        /* AQUI NESTE PONTO É USADO UM (SWITCH) DE DENTRO DE OUTRO (SWITCH)*/
+
                             console.log('           Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
 
                             switch (op1) {
-                                case 1:
+                                case 1:                             /* SEGUNDO SWITCH PARA ABRIR OPERAÇÃO - ACOMPANHADO DA FUNÇÃO DOWHILE QUE PERMITE REPETIR  A OPERAÇÃO */
                                     do {
                                         console.clear()
                                         console.log(`------------\n>> Adição <<\n------------`)
@@ -113,14 +133,14 @@ do {
                                         var total = num1 + num2;
                                         console.log("----------------------------")
                                         console.log("A SOMA dos números é: " + total);
-                                        console.log("----------------------------");
-                                        console.log("Deseja calcular novamente?");
-                                        console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
-                                        s_n = String(prompt(">>  "));
-                                    } while (s_n == "S" || s_n == "s");
-                                    console.clear();
-                                    break;
+                                        console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                        console.log("Deseja calcular novamente?");                                                                      //       ESTA É A ESTRUTURA PARA REPETIR O MESMO CÁLCULO
+                                        console.log();                                                                                                                   //             do{ console.clear() 
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                        s_n = String(prompt(">>  "));                                                                                      //            while (s_n == "S" || s_n == "s")       
+                                    } while (s_n == "S" || s_n == "s");                                                                                  //                 console.clear()
+                                    console.clear();                                                                                                            //                 break;
+                                    break;                                                                                                                        // ............................................................................................................................................
 
                                 case 2:
 
@@ -206,16 +226,30 @@ do {
                             console.log('           Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
 
-                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO
-
                             switch (op1) {
                                 case 1:
+                                    do {
+                                        console.clear()
+                                        console.log(`----------------------\n>> Cálculo Fatorial <<\n----------------------`)
+                                    var numero = Number(prompt("Insira um número: "));
+
+                                    if (numero <= 0) {
+                                        console.log("Insira um número maior que zero.");
+                                    } else {
+                                        var resultadof = Number(1);
+                                        for (var ifat = Number(1); ifat <= numero; ifat++) {
+                                            resultadof *= ifat;
+                                        }
+                                        console.log("----------------------------")
+                                        console.log("O fatorial é " + resultadof);
+                                    }
+                                    console.log("----------------------------");
+                                    console.log("Deseja calcular novamente?");
+                                    console.log();
+                                    console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                    s_n = String(prompt(">>  "));
+                                    } while (s_n == "S" || s_n == "s");
                                     console.clear()
-
-                                    //IMPLEMENTAR O CÓDIGO AQUI
-
-
-                                    console.log('Falta implementar algoritmo')
                                     break;
 
                                 case 0:
@@ -236,9 +270,9 @@ do {
                         console.clear();
                         while (op1 !== 0) {
                             console.log(`
-        -----------------------------
+        ----------------------------
         >> Equação do Segundo Grau <<
-        -----------------------------
+        ----------------------------
         1 - Executar
 
         >> (0) - Retornar ao Menu Principal <<
@@ -246,7 +280,7 @@ do {
                             console.log('          Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
 
-                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO
+                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO - VIDE EXEMPLOS NO INICIO
 
                             switch (op1) {
                                 case 1:
@@ -357,8 +391,9 @@ do {
                                     break;
 
                                 case 3:
-                                    console.clear()
+
                                     do {
+                                        console.clear()
                                         console.log('Falta implementar algoritmo');
 
                                         //IMPLEMENTAR O CÓDIGO AQUI
@@ -374,8 +409,8 @@ do {
                                     break;
 
                                 case 4:
-                                    console.clear()
                                     do {
+                                        console.clear()
                                         console.log('Falta implementar algoritmo');
 
                                         //IMPLEMENTAR O CÓDIGO AQUI
@@ -480,8 +515,8 @@ do {
                                     break;
 
                                 case 6:
-                                    console.clear()
                                     do {
+                                        console.clear()
                                         console.log('Falta implementar algoritmo');
 
                                         //IMPLEMENTAR O CÓDIGO AQUI
@@ -524,7 +559,7 @@ do {
                             console.log('           Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
 
-                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO
+                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO - VIDE EXEMPLOS NO INICIO
 
                             switch (op1) {
                                 case 1:
@@ -565,7 +600,7 @@ do {
                             console.log('           Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
 
-                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO :) 
+                            // CRIAR SWITCH PARA LER OP1 E EXECUTAR O ALGORITMO :)  - VIDE EXEMPLOS NO INICIO
 
                             switch (op1) {
                                 case 1:
