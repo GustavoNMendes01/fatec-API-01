@@ -12,15 +12,15 @@ GRUPO: >> ALPHA CODE <<
 
     INTEGRANTES
 
-    Scrum Master:
-    PO:
+    Scrum Master: Felipe Reis
+    PO: Renan Cassiano
     Dev: José Wesley de Jesus de Lima
-    Dev:
-    Dev:
-    Dev: 
-    Dev:
-    Dev:
-    Dev:
+    Dev: Gustavo Mendes
+    Dev: João Victor
+    Dev: Victor
+    Dev: Ian Neves
+    Dev: Matheus Carvalho
+    Dev: Rodrigo Blaque
 
 >>>>INSTRUÇÕES<<<<
 
@@ -46,11 +46,7 @@ Abra o terminal e execute o seguinte comando
 
         >>> PENDÊNCIAS - FALTA IMPLEMENTAR ALGORITMO. <<<
 
-        >        3 - Equação do Segundo Grau.
         >        4 - Conversão de Bases Numéricas. - B2XB8 / B8XB2 / B16XB2
-        >        5 - Concatenação de Duas Strings. 
-        >        6 - Juros Simples e Juros Composto.
-
 
 */
 
@@ -96,7 +92,7 @@ do {
         >>   (0) - Encerrar   <<
 `)
 
-  /* A PARTIR DO MENU USA-SE A VARIAVEL (OP1) PARA IDENTIFICAR O (SWITCH) POR EXEMPLO - 1 - FUNÇÕES BÁSICAS*/
+                /* A PARTIR DO MENU USA-SE A VARIAVEL (OP1) PARA IDENTIFICAR O (SWITCH) POR EXEMPLO - 1 - FUNÇÕES BÁSICAS*/
 
                 console.log(`           Informe a operação que deseja realizar: `)
                 op1 = Number(prompt(`           >> `));
@@ -117,7 +113,7 @@ do {
         >> (0) - Retornar ao Menu Principal <<
         `);
 
-        /* AQUI NESTE PONTO É USADO UM (SWITCH) DE DENTRO DE OUTRO (SWITCH)*/
+                            /* AQUI NESTE PONTO É USADO UM (SWITCH) DE DENTRO DE OUTRO (SWITCH)*/
 
                             console.log('           Qual operação deseja realizar?')
                             op1 = Number(prompt('           >> '))
@@ -231,23 +227,23 @@ do {
                                     do {
                                         console.clear()
                                         console.log(`----------------------\n>> Cálculo Fatorial <<\n----------------------`)
-                                    var numero = Number(prompt("Insira um número: "));
+                                        var numero = Number(prompt("Insira um número: "));
 
-                                    if (numero <= 0) {
-                                        console.log("Insira um número maior que zero.");
-                                    } else {
-                                        var resultadof = Number(1);
-                                        for (var ifat = Number(1); ifat <= numero; ifat++) {
-                                            resultadof *= ifat;
+                                        if (numero <= 0) {
+                                            console.log("Insira um número maior que zero.");
+                                        } else {
+                                            var resultadof = Number(1);
+                                            for (var ifat = Number(1); ifat <= numero; ifat++) {
+                                                resultadof *= ifat;
+                                            }
+                                            console.log("----------------------------")
+                                            console.log("O fatorial é " + resultadof);
                                         }
-                                        console.log("----------------------------")
-                                        console.log("O fatorial é " + resultadof);
-                                    }
-                                    console.log("----------------------------");
-                                    console.log("Deseja calcular novamente?");
-                                    console.log();
-                                    console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
-                                    s_n = String(prompt(">>  "));
+                                        console.log("----------------------------");
+                                        console.log("Deseja calcular novamente?");
+                                        console.log();
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
                                     break;
@@ -286,10 +282,64 @@ do {
                                 case 1:
                                     console.clear()
 
-                                    //IMPLEMENTAR O CÓDIGO AQUI
+                                    do {
+                                        console.clear()
+                                        console.log(`----------------------------\n>> Equação do Segundo Grau <<\n----------------------------`)
+                                        console.log('Digite os coeficientes da equação quadrática (ax² + bx + c = 0):');
+
+                                        var eq2_A = Number(prompt("Insira o valor de A: "));
+                                        var eq2_B = Number(prompt("Insira o valor de B: "));
+                                        var eq2_C = Number(prompt("Insira o valor de C: "));
+
+                                        const delta = eq2_B * eq2_B - 4 * eq2_A * eq2_C;
+
+                                        var x1 = Number()
+                                        var x2 = Number()
+
+                                        switch (true) {
+
+                                            case (delta > 0):
+                                                x1 = (-eq2_B + Math.sqrt(delta)) / (2 * eq2_A);
+                                                x2 = (-eq2_B - Math.sqrt(delta)) / (2 * eq2_A);
+
+                                                console.log("----------------------------")
+                                                console.log(`O Valor de X1 é igual a ${x1.toFixed(2)}\nO Valor de X2 é igual a ${x2.toFixed(2)}`);
+                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                                console.log("Deseja calcular novamente?");                                                                      //       ESTA É A ESTRUTURA PARA REPETIR O MESMO CÁLCULO
+                                                console.log();                                                                                                                   //             do{ console.clear() 
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                s_n = String(prompt(">>  "));
+                                                break;
 
 
-                                    console.log('Falta implementar algoritmo')
+                                            case (delta === 0):
+                                                x1 = -eq2_B / (2 * eq2_A);
+
+                                                console.log("----------------------------")
+                                                console.log(`O Valor de X1 é igual a ${x1.toFixed(2)}.`);
+                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                                console.log("Deseja calcular novamente?");
+
+                                                console.log();                                                                                                                   //             do{ console.clear() 
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                s_n = String(prompt(">>  "));
+                                                break;
+
+
+                                            default:
+                                                console.log("----------------------------")
+                                                console.log("A equação não possui raízes reais.");
+                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                                console.log("Deseja calcular novamente?");
+
+                                                console.log();                                                                                                                   //             do{ console.clear() 
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                s_n = String(prompt(">>  "));
+                                                break;
+                                        }
+
+                                    } while (s_n == "S" || s_n == "s");                                                                                  //                 console.clear()
+                                    console.clear();                                                                                                            //                 break;
                                     break;
 
                                 case 0:
@@ -546,6 +596,20 @@ do {
                         break;
 
                     case 5:
+                        function concatena(str1 = String(), str2 = String()){
+                            let result = '';
+
+                            for (let i = 0; i < str1.length; i++) {
+                                result += str1[i];
+                            }
+
+                            for (let i = 0; i < str2.length; i++) {
+                                result += str2[i];
+                            }
+
+                            return result;
+                        }
+
                         console.clear();
                         while (op1 !== 0) {
                             console.log(`
@@ -563,12 +627,32 @@ do {
 
                             switch (op1) {
                                 case 1:
+                                    do {
+                                        console.clear()
+                                        console.log(`----------------------------------\n>> Concatenação de Duas Strings <<\n----------------------------------`)
+                                        
+                                        const string1 = prompt("Digite a 1ª String: ");
+                                        const string2 = prompt("Digite a 2ª String: ");
+
+                                        console.log(`----------------------------------`)
+
+                                        if (string1 !== null && string2 !== null) {
+                                            const aux = concatena(string1, string2);
+                                            console.log(`>> ${aux}`); 
+                                            console.log(`----------------------------------`)
+
+                                        } else {
+                                            console.log("Entradas inválidas.");
+                                        }
+
+                                        console.log("Deseja realizar outra concatenação?");
+                                        console.log();
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        s_n = String(prompt(">>  "));
+
+                                    } while (s_n == "S" || s_n == "s");
+
                                     console.clear()
-
-                                    //IMPLEMENTAR O CÓDIGO AQUI
-
-
-                                    console.log('Falta implementar algoritmo')
                                     break;
 
                                 case 0:
@@ -586,6 +670,18 @@ do {
                         break;
 
                     case 6:
+
+                        function potencia(x = Number(), y = Number()) {
+                            var res = 1, i = 1
+
+                            do {
+                                res = res * x
+                                i += i
+                            } while (i <= y);
+
+                            return res
+                        }
+
                         console.clear();
                         while (op1 !== 0) {
                             console.log(`
@@ -604,19 +700,49 @@ do {
 
                             switch (op1) {
                                 case 1:
+                                    do {
+                                        console.clear()
+                                        console.log(`-------------------\n>> Juros Simples <<\n-------------------`)
+                                        var capI = Number(prompt("Insira o Capital Inicial:"))
+                                        var taxa = Number(prompt("Insira a Taxa de Juros (em %):"))
+                                        var temp = Number(prompt("Insira o Prazo (em meses):"))
+
+                                        var juroVal = capI * (taxa / 100) * temp
+
+                                        console.log(`----------------------------------`)
+                                        console.log(`O valor do juros total será de: R$ ${juroVal.toFixed(2)}`)
+                                        console.log(`----------------------------------`)
+                                        console.log("Deseja realizar outra operação?");
+                                        console.log();
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        s_n = String(prompt(">>  "));
+                                    } while (s_n == "S" || s_n == "s");
                                     console.clear()
 
-                                    //IMPLEMENTAR O CÓDIGO AQUI
-
-
-                                    console.log('Falta implementar algoritmo')
                                     break;
 
                                 case 2:
+                                    do {
+                                        console.clear()
+                                        console.log(`---------------------\n>> Juros Compostos <<\n---------------------`)
+
+                                        var capI = Number(prompt("Insira o Capital Inicial:"))
+                                        var taxa = Number(prompt("Insira a Taxa de Juros (em %):"))
+                                        var temp = Number(prompt("Insira o Prazo (em meses):"))
+
+                                        var juroVal = capI * potencia((1 + (taxa / 100)), temp)
+
+                                        console.log(`----------------------------------`)
+                                        console.log(`O valor do juros total será de: R$ ${juroVal.toFixed(2)}`)
+                                        console.log(`----------------------------------`)
+                                        console.log("Deseja realizar outra operação?");
+                                        console.log();
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        s_n = String(prompt(">>  "));
+                                    } while (s_n == "S" || s_n == "s");
+
                                     console.clear()
 
-                                    //IMPLEMENTAR O CÓDIGO AQUI
-                                    console.log('Falta implementar algoritmo')
                                     break;
 
                                 case 0:
@@ -666,5 +792,3 @@ do {
     }
 
 } while (op !== 0);
-
-
