@@ -46,7 +46,7 @@ Abra o terminal e execute o seguinte comando
 
         >>> PENDÊNCIAS - FALTA IMPLEMENTAR ALGORITMO. <<<
 
-        >        4 - Conversão de Bases Numéricas. - B2XB8 / B8XB2 / B16XB2
+        >        4 - Conversão de Bases Numéricas. -  B8XB2 
 
 */
 
@@ -132,7 +132,7 @@ do {
                                         console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
                                         console.log("Deseja calcular novamente?");                                                                      //       ESTA É A ESTRUTURA PARA REPETIR O MESMO CÁLCULO
                                         console.log();                                                                                                                   //             do{ console.clear() 
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");             //        >> seu código <<   }    
                                         s_n = String(prompt(">>  "));                                                                                      //            while (s_n == "S" || s_n == "s")       
                                     } while (s_n == "S" || s_n == "s");                                                                                  //                 console.clear()
                                     console.clear();                                                                                                            //                 break;
@@ -152,7 +152,7 @@ do {
                                         console.log("----------------------------");
                                         console.log("Deseja calcular novamente?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -171,7 +171,7 @@ do {
                                         console.log("----------------------------");
                                         console.log("Deseja calcular novamente?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -190,7 +190,7 @@ do {
                                         console.log("----------------------------");
                                         console.log("Deseja calcular novamente?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -242,7 +242,7 @@ do {
                                         console.log("----------------------------");
                                         console.log("Deseja calcular novamente?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -304,10 +304,10 @@ do {
 
                                                 console.log("----------------------------")
                                                 console.log(`O Valor de X1 é igual a ${x1.toFixed(2)}\nO Valor de X2 é igual a ${x2.toFixed(2)}`);
-                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
-                                                console.log("Deseja calcular novamente?");                                                                      //       ESTA É A ESTRUTURA PARA REPETIR O MESMO CÁLCULO
-                                                console.log();                                                                                                                   //             do{ console.clear() 
-                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                console.log("----------------------------");
+                                                console.log("Deseja calcular novamente?");
+                                                console.log();
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                                 s_n = String(prompt(">>  "));
                                                 break;
 
@@ -317,11 +317,11 @@ do {
 
                                                 console.log("----------------------------")
                                                 console.log(`O Valor de X1 é igual a ${x1.toFixed(2)}.`);
-                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                                console.log("----------------------------");
                                                 console.log("Deseja calcular novamente?");
 
-                                                console.log();                                                                                                                   //             do{ console.clear() 
-                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                console.log();
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                                 s_n = String(prompt(">>  "));
                                                 break;
 
@@ -329,17 +329,17 @@ do {
                                             default:
                                                 console.log("----------------------------")
                                                 console.log("A equação não possui raízes reais.");
-                                                console.log("----------------------------");                                                                            // ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+                                                console.log("----------------------------");
                                                 console.log("Deseja calcular novamente?");
 
-                                                console.log();                                                                                                                   //             do{ console.clear() 
-                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");             //        >> seu código <<   }    
+                                                console.log();
+                                                console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                                 s_n = String(prompt(">>  "));
                                                 break;
                                         }
 
-                                    } while (s_n == "S" || s_n == "s");                                                                                  //                 console.clear()
-                                    console.clear();                                                                                                            //                 break;
+                                    } while (s_n == "S" || s_n == "s");
+                                    console.clear();
                                     break;
 
                                 case 0:
@@ -366,10 +366,10 @@ do {
         ----------------------------------
         1 - B10XB2 - Decimal para Binário.
         2 - B2XB10 - Binário para Decimal.
-        3 - B2XB8 - Binário para Octal. ***
+        3 - B2XB8 - Binário para Octal. 
         4 - B8XB2 - Octal para Binário. ***
         5 - B2XB16 - Binário para Hexadecimal.
-        6 - B16XB2 - Hexadecimal para Binário.***
+        6 - B16XB2 - Hexadecimal para Binário.
         
         >>   (0) - Retornar ao Menu Principal <<
         `)
@@ -400,7 +400,7 @@ do {
                                         console.log("---------------------------------------");
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear();
@@ -418,7 +418,7 @@ do {
                                         let x = (0);
                                         let deci = Number();
 
-                                        while (b1 > base) {
+                                        while (b1 >= base) {
 
                                             let bin = Math.floor(b1 / base) % 10
 
@@ -434,7 +434,7 @@ do {
                                         console.log("---------------------------------------");
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear();
@@ -442,16 +442,64 @@ do {
 
                                 case 3:
 
+                                    function splitNumberIntoDigits(number) {
+                                        return number
+                                            .toString()
+                                            .split("")
+                                            .map(Number);
+                                    }
+
+                                    function binarioParaOct(binario = String()) {
+                                        let octal = 0;
+                                        let length = binario.length;
+
+                                        for (let i = 0; i < length; i++) {
+                                            let digito = parseInt(binario[i]);
+
+                                            if (digito !== 0 && digito !== 1) {
+                                                throw new Error("Entrada inválida: o número deve ser binário.");
+                                            }
+
+                                            let potencia = length - i - 1;
+
+                                            octal += digito * Math.pow(2, potencia);
+                                        }
+
+                                        return octal;
+                                    }
+
                                     do {
-                                        console.clear()
-                                        console.log('Falta implementar algoritmo');
+                                        console.clear();
+                                        console.log(`>> Conversão de Binário para Octal - B2XB8 <<`);
+                                        console.log(`*** Lembre-se que um número binário é composto apenas por (0 e 1).***`);
+                                        console.log("--------------------------------------------------------------------------------");
+                                        let nBin = Number(prompt("Digite um número para converter de Binário para Octal: "));
+                                        var octNumArray = new Array
 
-                                        //IMPLEMENTAR O CÓDIGO AQUI
+                                        const digits = splitNumberIntoDigits(nBin).reverse();
 
-                                        console.log(`----------------------------------`)
+                                        var digLength = (digits.length % 3 > 0)
+                                            ? (Math.floor(digits.length / 3) + 1)
+                                            : (digits.length / 3)
+                                            ;
+
+                                        for (var contOct = 0; contOct < digLength; contOct++) {
+                                            var trio = new Array
+                                            var localI = contOct * 3
+
+                                            trio[contOct] = [((digits[localI + 2] != undefined) ? digits[localI + 2] : ''), ((digits[localI + 1] != undefined) ? digits[localI + 1] : ''), (digits[localI])]
+
+                                            //console.log(binarioParaOct(String(trio[contOct].join(''))))
+                                            octNumArray[contOct] = binarioParaOct(String(trio[contOct].join('')))
+                                        }
+
+                                        var octal = Number(octNumArray.reverse().join(''))
+
+                                        console.log(`A conversão do número binário: ${nBin}\nCorresponde ao número octal: ${octal}`);
+                                        console.log("---------------------------------------");
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear();
@@ -468,7 +516,7 @@ do {
                                         console.log(`----------------------------------`)
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear();
@@ -558,7 +606,7 @@ do {
                                         console.log("---------------------------------------");
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -567,14 +615,76 @@ do {
                                 case 6:
                                     do {
                                         console.clear()
-                                        console.log('Falta implementar algoritmo');
+                                        console.log(`>> Conversão de Hexadecimal para Binário - B16XB2 <<`);
+                                        console.log(`*** Lembre-se que um número hexadecimal é composto apenas por números de 0 a 9 e letras de A a F.***`);
+                                        console.log("-------------------------------------------------------------------------------------------");
+                                        let hexad = String(prompt(`Digite um número para converter de binário para hexadecimal: `));
+                                        let id = String()
+                                        let r_hexad = String()
 
-                                        //IMPLEMENTAR O CÓDIGO AQUI
+                                        for (let i = 0; i < hexad.length; i++) {
+                                            id = hexad[i].toUpperCase();
 
-                                        console.log(`----------------------------------`)
+
+                                            switch (id) {
+                                                case "0":
+                                                    r_hexad = r_hexad + "0000"
+                                                    break;
+                                                case "1":
+                                                    r_hexad = r_hexad + "0001"
+                                                    break;
+                                                case "2":
+                                                    r_hexad = r_hexad + "0010"
+                                                    break;
+                                                case "3":
+                                                    r_hexad = r_hexad + "0011"
+                                                    break;
+                                                case "4":
+                                                    r_hexad = r_hexad + "0100"
+                                                    break;
+                                                case "5":
+                                                    r_hexad = r_hexad + "0101"
+                                                    break;
+                                                case "6":
+                                                    r_hexad = r_hexad + "0110"
+                                                    break;
+                                                case "7":
+                                                    r_hexad = r_hexad + "0111"
+                                                    break;
+                                                case "8":
+                                                    r_hexad = r_hexad + "1000"
+                                                    break;
+                                                case "9":
+                                                    r_hexad = r_hexad + "1001"
+                                                    break;
+                                                case "A":
+                                                    r_hexad = r_hexad + "1010"
+                                                    break;
+                                                case "B":
+                                                    r_hexad = r_hexad + "1011"
+                                                    break;
+                                                case "C":
+                                                    r_hexad = r_hexad + "1100"
+                                                    break;
+                                                case "D":
+                                                    r_hexad = r_hexad + "1101"
+                                                    break;
+                                                case "E":
+                                                    r_hexad = r_hexad + "1110"
+                                                    break;
+                                                case "F":
+                                                    r_hexad = r_hexad + "1111"
+                                                    break;
+                                            }
+                                        }
+
+                                        let hexad1 = parseInt(r_hexad)
+
+                                        console.log(`O valor em binário para o número hexadecimal: ${hexad}\n Corresponde a: ${hexad1}-h`);
+                                        console.log(`----------------------------------------`)
                                         console.log("Deseja realizar outra conversão?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear();
@@ -596,7 +706,7 @@ do {
                         break;
 
                     case 5:
-                        function concatena(str1 = String(), str2 = String()){
+                        function concatena(str1 = String(), str2 = String()) {
                             let result = '';
 
                             for (let i = 0; i < str1.length; i++) {
@@ -630,7 +740,7 @@ do {
                                     do {
                                         console.clear()
                                         console.log(`----------------------------------\n>> Concatenação de Duas Strings <<\n----------------------------------`)
-                                        
+
                                         const string1 = prompt("Digite a 1ª String: ");
                                         const string2 = prompt("Digite a 2ª String: ");
 
@@ -638,7 +748,7 @@ do {
 
                                         if (string1 !== null && string2 !== null) {
                                             const aux = concatena(string1, string2);
-                                            console.log(`>> ${aux}`); 
+                                            console.log(`>> ${aux}`);
                                             console.log(`----------------------------------`)
 
                                         } else {
@@ -647,7 +757,7 @@ do {
 
                                         console.log("Deseja realizar outra concatenação?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
 
                                     } while (s_n == "S" || s_n == "s");
@@ -714,7 +824,7 @@ do {
                                         console.log(`----------------------------------`)
                                         console.log("Deseja realizar outra operação?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
                                     console.clear()
@@ -737,7 +847,7 @@ do {
                                         console.log(`----------------------------------`)
                                         console.log("Deseja realizar outra operação?");
                                         console.log();
-                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
+                                        console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                                         s_n = String(prompt(">>  "));
                                     } while (s_n == "S" || s_n == "s");
 
