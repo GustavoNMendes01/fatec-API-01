@@ -41,13 +41,7 @@ Abra o terminal e execute o seguinte comando
         >> node api.ts 
         (Nome do arquivo a ser executado)
     
-        Esse comando possibilita o uso da Calculadora Científica.
-
-
-        >>> PENDÊNCIAS - FALTA IMPLEMENTAR ALGORITMO. <<<
-
-        >        4 - Conversão de Bases Numéricas. -  B8XB2 
-
+        Esse comando possibilita o uso da Calculadora Científica. 
 */
 
 const prompt = require('prompt-sync')({ sigint: true })
@@ -210,10 +204,10 @@ do {
                     for (var ifat = Number(1); ifat <= numero; ifat++) {
                         resultadof *= ifat;
                     }
-                    console.log("----------------------------");
-                    console.log("O fatorial é " + resultadof);
+                    console.log("----------------------------------");
+                    console.log("O resultado fatorial é: " + resultadof);
                 }
-                console.log("----------------------------");
+                console.log("----------------------------------");
                 console.log("Deseja calcular novamente?");
                 console.log();
                 console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
@@ -289,7 +283,7 @@ do {
         1 - B10XB2 - Decimal para Binário.
         2 - B2XB10 - Binário para Decimal.
         3 - B2XB8 - Binário para Octal. 
-        4 - B8XB2 - Octal para Binário. ***
+        4 - B8XB2 - Octal para Binário.
         5 - B2XB16 - Binário para Hexadecimal.
         6 - B16XB2 - Hexadecimal para Binário.
             
@@ -339,19 +333,34 @@ do {
                             let base = (1);
                             let x = (0);
                             let deci = Number();
+                            let n_bin = Number()
 
-                            while (b1 >= base) {
+                            for (let i = 0; i < String(b).length; i++) {
 
-                                let bin = Math.floor(b1 / base) % 10
-
-                                if (bin >= 1) {
-                                    deci = deci + (2 ** x)
-                                };
-
-                                x = x + 1
-                                base = base * 10
+                                if ((Number(String(b)[i]) > 1)) {
+                                    n_bin = Number(1)
+                                }
                             }
-                            console.log(`A conversão do número Binário: ${b1}\nCorresponde ao número Decimal: ${deci}`);
+
+                            switch (n_bin) {
+                                case 1:
+                                    console.log(`>> ${b} não é um número binário.`);
+                                    break;
+
+                                default:
+                                    while (b1 >= base) {
+
+                                        let bin = Math.floor(b1 / base) % 10
+
+                                        if (bin >= 1) {
+                                            deci = deci + (2 ** x)
+                                        };
+
+                                        x = x + 1
+                                        base = base * 10
+                                    }
+                                    console.log(`A conversão do número Binário: ${b1}\nCorresponde ao número Decimal: ${deci}`);
+                            }
                             console.log("---------------------------------------");
                             console.log("Deseja realizar outra conversão?");
                             console.log();
@@ -394,27 +403,42 @@ do {
                             console.log("--------------------------------------------------------------------------------");
                             let nBin = Number(prompt("Digite um número para converter de Binário para Octal: "));
                             var octNumArray = new Array
+                            let n_bin = Number()
 
                             const digits = splitNumberIntoDigits(nBin).reverse();
 
-                            var digLength = (digits.length % 3 > 0)
-                                ? (Math.floor(digits.length / 3) + 1)
-                                : (digits.length / 3)
-                                ;
+                            for (let i = 0; i < String(nBin).length; i++) {
 
-                            for (var contOct = 0; contOct < digLength; contOct++) {
-                                var trio = new Array
-                                var localI = contOct * 3
-
-                                trio[contOct] = [((digits[localI + 2] != undefined) ? digits[localI + 2] : ''), ((digits[localI + 1] != undefined) ? digits[localI + 1] : ''), (digits[localI])]
-
-                                //console.log(binarioParaOct(String(trio[contOct].join(''))))
-                                octNumArray[contOct] = binarioParaOct(String(trio[contOct].join('')))
+                                if ((Number(String(nBin)[i]) > 1)) {
+                                    n_bin = Number(1)
+                                }
                             }
 
-                            var octal = Number(octNumArray.reverse().join(''))
+                            switch (n_bin) {
+                                case 1:
+                                    console.log(`>> ${nBin} não é um número binário.`);
+                                    break;
 
-                            console.log(`A conversão do número Binário: ${nBin}\nCorresponde ao número Octal: ${octal}`);
+                                default:
+                                    var digLength = (digits.length % 3 > 0)
+                                        ? (Math.floor(digits.length / 3) + 1)
+                                        : (digits.length / 3)
+                                        ;
+
+                                    for (var contOct = 0; contOct < digLength; contOct++) {
+                                        var trio = new Array
+                                        var localI = contOct * 3
+
+                                        trio[contOct] = [((digits[localI + 2] != undefined) ? digits[localI + 2] : ''), ((digits[localI + 1] != undefined) ? digits[localI + 1] : ''), (digits[localI])]
+
+                                        //console.log(binarioParaOct(String(trio[contOct].join(''))))
+                                        octNumArray[contOct] = binarioParaOct(String(trio[contOct].join('')))
+                                    }
+
+                                    var octal = Number(octNumArray.reverse().join(''))
+
+                                    console.log(`A conversão do número Binário: ${nBin}\nCorresponde ao número Octal: ${octal}`);
+                            }
                             console.log("---------------------------------------");
                             console.log("Deseja realizar outra conversão?");
                             console.log();
@@ -425,13 +449,69 @@ do {
                         break;
 
                     case 4:
+                        function splitNumberIntoDigits1(number) {
+                            return number
+                                .toString()
+                                .split("")
+                                .map(Number);
+                        }
+
+                        function OctParaBin(n = Number()) {
+                            let resultado = String();
+                            while (n > 0) {
+                                if (n % 2 === 1) {
+                                    resultado = ('1') + resultado;
+                                }
+                                else {
+                                    resultado = ('0') + resultado;
+                                }
+                                n = Math.floor(n / 2);
+                            }
+                            if ((Number(resultado) < 100) && (Number(resultado) > 9)) {
+                                resultado = "0" + resultado
+                            }
+                            if (Number(resultado) < 9) {
+                                resultado = "00" + resultado
+                            }
+                            return resultado;
+                        }
+
                         do {
-                            console.clear()
-                            console.log('Falta implementar algoritmo');
-                            console.log(`----------------------------------`)
+                            console.clear();
+                            console.log(`>> Conversão de Octal para Binário - B8XB2 <<`);
+                            console.log(`*** Lembre-se que um número Octal é composto por números de 0 a 7.***`);
+                            console.log("-------------------------------------------------------");
+                            let nOct = Number(prompt("Digite um número para converter de Octal para Binário: "));
+                            var binNumArray = new Array;
+                            let n_bin = Number()
+
+                            const digits = splitNumberIntoDigits1(nOct).reverse();
+
+                            for (let i = 0; i < String(nOct).length; i++) {
+
+                                if ((Number(String(nOct)[i]) > 7)) {
+                                    n_bin = Number(1)
+                                }
+                            }
+
+                            switch (n_bin) {
+                                case 1:
+                                    console.log(`>> ${nOct} não é um número octal.`);
+                                    break;
+
+                                default:
+
+                                    for (var contBin = 0; contBin < digits.length; contBin++) {
+                                        binNumArray[contBin] = OctParaBin(digits[contBin]);
+                                    }
+
+                                    var vBin = Number(binNumArray.reverse().join(''));
+                                    console.log(`A conversão do número Octal: ${nOct}\nCorresponde ao número Binário: ${vBin}`);
+                            }
+                            console.log("-------------------------------------------------------");
                             console.log("Deseja realizar outra conversão?");
                             console.log();
-                            console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
+                            console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior ");
                             s_n = String(prompt(">>  "));
                         } while (s_n == "S" || s_n == "s");
                         console.clear();
@@ -450,74 +530,89 @@ do {
                             let hexad = Number();
                             let hexa = Number();
                             let y = Number();
+                            let n_bin = Number()
 
-                            while (bs <= binario) {
+                            for (let i = 0; i < String(bin1).length; i++) {
 
-                                for (y = 0; y < 4; y++) {
-
-                                    hexa = Math.floor(binario / bs) % 10
-
-                                    if (hexa >= 1) {
-                                        hexad = hexad + (1 * (2 ** y))
-                                    };
-
-                                    bs = bs * 10
-                                }
-
-                                if (y = 4) {
-                                    switch (hexad) {
-                                        case 1:
-                                            resultadoh = ("1") + resultadoh;
-                                            break;
-                                        case 2:
-                                            resultadoh = ("2") + resultadoh;
-                                            break;
-                                        case 3:
-                                            resultadoh = ("3") + resultadoh;
-                                            break;
-                                        case 4:
-                                            resultadoh = ("4") + resultadoh;
-                                            break;
-                                        case 5:
-                                            resultadoh = ("5") + resultadoh;
-                                            break;
-                                        case 6:
-                                            resultadoh = ("6") + resultadoh;
-                                            break;
-                                        case 7:
-                                            resultadoh = ("7") + resultadoh;
-                                            break;
-                                        case 8:
-                                            resultadoh = ("8") + resultadoh;
-                                            break;
-                                        case 9:
-                                            resultadoh = ("9") + resultadoh;
-                                            break;
-                                        case 10:
-                                            resultadoh = ("A") + resultadoh;
-                                            break;
-                                        case 11:
-                                            resultadoh = ("B") + resultadoh;
-                                            break;
-                                        case 12:
-                                            resultadoh = ("C") + resultadoh;
-                                            break;
-                                        case 13:
-                                            resultadoh = ("D") + resultadoh;
-                                            break;
-                                        case 14:
-                                            resultadoh = ("E") + resultadoh;
-                                            break;
-                                        case 15:
-                                            resultadoh = ("F") + resultadoh;
-                                            break;
-                                    }
-                                    y = 0
-                                    hexad = 0
-                                    hexa = 0
+                                if ((Number(String(bin1)[i]) > 1)) {
+                                    n_bin = Number(1)
                                 }
                             }
-                            console.log(`A conversão do número Binário: ${binario}\nCorresponde ao Hexadecimal: ${resultadoh}-h`);
+
+                            switch (n_bin) {
+                                case 1:
+                                    console.log(`>> ${bin1} não é um número binário.`);
+                                    break;
+
+                                default:
+                                    while (bs <= binario) {
+
+                                        for (y = 0; y < 4; y++) {
+
+                                            hexa = Math.floor(binario / bs) % 10
+
+                                            if (hexa >= 1) {
+                                                hexad = hexad + (1 * (2 ** y))
+                                            };
+
+                                            bs = bs * 10
+                                        }
+
+                                        if (y = 4) {
+                                            switch (hexad) {
+                                                case 1:
+                                                    resultadoh = ("1") + resultadoh;
+                                                    break;
+                                                case 2:
+                                                    resultadoh = ("2") + resultadoh;
+                                                    break;
+                                                case 3:
+                                                    resultadoh = ("3") + resultadoh;
+                                                    break;
+                                                case 4:
+                                                    resultadoh = ("4") + resultadoh;
+                                                    break;
+                                                case 5:
+                                                    resultadoh = ("5") + resultadoh;
+                                                    break;
+                                                case 6:
+                                                    resultadoh = ("6") + resultadoh;
+                                                    break;
+                                                case 7:
+                                                    resultadoh = ("7") + resultadoh;
+                                                    break;
+                                                case 8:
+                                                    resultadoh = ("8") + resultadoh;
+                                                    break;
+                                                case 9:
+                                                    resultadoh = ("9") + resultadoh;
+                                                    break;
+                                                case 10:
+                                                    resultadoh = ("A") + resultadoh;
+                                                    break;
+                                                case 11:
+                                                    resultadoh = ("B") + resultadoh;
+                                                    break;
+                                                case 12:
+                                                    resultadoh = ("C") + resultadoh;
+                                                    break;
+                                                case 13:
+                                                    resultadoh = ("D") + resultadoh;
+                                                    break;
+                                                case 14:
+                                                    resultadoh = ("E") + resultadoh;
+                                                    break;
+                                                case 15:
+                                                    resultadoh = ("F") + resultadoh;
+                                                    break;
+                                            }
+                                            y = 0
+                                            hexad = 0
+                                            hexa = 0
+                                        }
+                                    }
+                                    console.log(`A conversão do número Binário: ${binario}\nCorresponde ao Hexadecimal: ${resultadoh}-h`);
+                            }
                             console.log("---------------------------------------");
                             console.log("Deseja realizar outra conversão?");
                             console.log();
@@ -533,66 +628,81 @@ do {
                             console.log(`>> Conversão de Hexadecimal para Binário - B16XB2 <<`);
                             console.log(`*** Lembre-se que um Hexadecimal é composto apenas por números de 0 a 9 e letras de A a F.***`);
                             console.log("------------------------------------------------------------------------------------------");
-                            let hexad = String(prompt(`Digite um número para converter de Binário para Hexadecimal: `));
+                            let hexad = String(prompt(`Digite um valor para converter de Hexadecimal para Binário: `));
                             let id = String();
                             let r_hexad = String();
+                            let n_bin = Number()
 
-                            for (let i = 0; i < hexad.length; i++) {
-                                id = hexad[i].toUpperCase();
+                            for (let i = 0; i < String(hexad).length; i++) {
 
-                                switch (id) {
-                                    case "0":
-                                        r_hexad = r_hexad + "0000"
-                                        break;
-                                    case "1":
-                                        r_hexad = r_hexad + "0001"
-                                        break;
-                                    case "2":
-                                        r_hexad = r_hexad + "0010"
-                                        break;
-                                    case "3":
-                                        r_hexad = r_hexad + "0011"
-                                        break;
-                                    case "4":
-                                        r_hexad = r_hexad + "0100"
-                                        break;
-                                    case "5":
-                                        r_hexad = r_hexad + "0101"
-                                        break;
-                                    case "6":
-                                        r_hexad = r_hexad + "0110"
-                                        break;
-                                    case "7":
-                                        r_hexad = r_hexad + "0111"
-                                        break;
-                                    case "8":
-                                        r_hexad = r_hexad + "1000"
-                                        break;
-                                    case "9":
-                                        r_hexad = r_hexad + "1001"
-                                        break;
-                                    case "A":
-                                        r_hexad = r_hexad + "1010"
-                                        break;
-                                    case "B":
-                                        r_hexad = r_hexad + "1011"
-                                        break;
-                                    case "C":
-                                        r_hexad = r_hexad + "1100"
-                                        break;
-                                    case "D":
-                                        r_hexad = r_hexad + "1101"
-                                        break;
-                                    case "E":
-                                        r_hexad = r_hexad + "1110"
-                                        break;
-                                    case "F":
-                                        r_hexad = r_hexad + "1111"
-                                        break;
+                                if ((String(hexad)[i]) > 'f') {
+                                    n_bin = Number(1)
                                 }
                             }
 
-                            console.log(`A conversão do Hexadecimal: ${hexad}\nCorresponde ao Binário: ${r_hexad}-h`);
+                            switch (n_bin) {
+                                case 1:
+                                    console.log(`>> ${hexad} não é um hexadecimal.`);
+                                    break;
+
+                                default:
+
+                                    for (let i = 0; i < hexad.length; i++) {
+                                        id = hexad[i].toUpperCase();
+
+                                        switch (id) {
+                                            case "0":
+                                                r_hexad = r_hexad + "0000"
+                                                break;
+                                            case "1":
+                                                r_hexad = r_hexad + "0001"
+                                                break;
+                                            case "2":
+                                                r_hexad = r_hexad + "0010"
+                                                break;
+                                            case "3":
+                                                r_hexad = r_hexad + "0011"
+                                                break;
+                                            case "4":
+                                                r_hexad = r_hexad + "0100"
+                                                break;
+                                            case "5":
+                                                r_hexad = r_hexad + "0101"
+                                                break;
+                                            case "6":
+                                                r_hexad = r_hexad + "0110"
+                                                break;
+                                            case "7":
+                                                r_hexad = r_hexad + "0111"
+                                                break;
+                                            case "8":
+                                                r_hexad = r_hexad + "1000"
+                                                break;
+                                            case "9":
+                                                r_hexad = r_hexad + "1001"
+                                                break;
+                                            case "A":
+                                                r_hexad = r_hexad + "1010"
+                                                break;
+                                            case "B":
+                                                r_hexad = r_hexad + "1011"
+                                                break;
+                                            case "C":
+                                                r_hexad = r_hexad + "1100"
+                                                break;
+                                            case "D":
+                                                r_hexad = r_hexad + "1101"
+                                                break;
+                                            case "E":
+                                                r_hexad = r_hexad + "1110"
+                                                break;
+                                            case "F":
+                                                r_hexad = r_hexad + "1111"
+                                                break;
+                                        }
+                                    }
+                                    console.log(`A conversão do Hexadecimal: ${hexad}\nCorresponde ao Binário: ${r_hexad}-h`);
+                            }
                             console.log(`----------------------------------------`);
                             console.log("Deseja realizar outra conversão?");
                             console.log();
@@ -634,7 +744,7 @@ do {
                 console.log(`----------------------------------\n>> Concatenação de Duas Strings <<\n----------------------------------`)
                 const string1 = prompt("Digite a 1ª String: ");
                 const string2 = prompt("Digite a 2ª String: ");
-                console.log(`----------------------------------`)
+                console.log(`----------------------------------`);
 
                 if (string1 !== null && string2 !== null) {
                     const aux = concatena(string1, string2);
@@ -644,17 +754,15 @@ do {
                 } else {
                     console.log("Entradas inválidas.");
                 }
-
                 console.log("Deseja realizar outra concatenação?");
                 console.log();
                 console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                 s_n = String(prompt(">>  "));
             } while (s_n == "S" || s_n == "s");
-            console.clear()
+            console.clear();
             break;
 
         case 6:
-
             function potencia(x = Number(), y = Number()) {
                 var res = 1, i = 1
 
@@ -665,7 +773,6 @@ do {
 
                 return res
             }
-
             console.clear();
             while (op1 !== 0) {
                 console.log(`
@@ -676,45 +783,45 @@ do {
         2 - Juros Composto
         
             >> (0) - Retornar ao Menu Principal <<
-        `)
-                console.log('           Qual operação deseja realizar?')
-                op1 = Number(prompt('           >> '))
+        `);
+                console.log('           Qual operação deseja realizar?');
+                op1 = Number(prompt('           >> '));
 
                 switch (op1) {
                     case 1:
                         do {
-                            console.clear()
-                            console.log(`-------------------\n>> Juros Simples <<\n-------------------`)
-                            var capI = Number(prompt("Insira o Capital Inicial:"))
-                            var taxa = Number(prompt("Insira a Taxa de Juros (em %):"))
-                            var temp = Number(prompt("Insira o Prazo (em meses):"))
+                            console.clear();
+                            console.log(`-------------------\n>> Juros Simples <<\n-------------------`);
+                            var capI = Number(prompt("Insira o Capital Inicial: "));
+                            var taxa = Number(prompt("Insira a Taxa de Juros (em %): "));
+                            var temp = Number(prompt("Insira o Prazo (em meses): "));
 
                             var juroVal = capI * (taxa / 100) * temp
 
-                            console.log(`----------------------------------`)
-                            console.log(`O valor do juros total será de: R$ ${juroVal.toFixed(2)}`)
-                            console.log(`----------------------------------`)
+                            console.log(`----------------------------------`);
+                            console.log(`O valor do juros total será de: R$ ${juroVal.toFixed(2)}`);
+                            console.log(`----------------------------------`);
                             console.log("Deseja realizar outra operação?");
                             console.log();
                             console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
                             s_n = String(prompt(">>  "));
                         } while (s_n == "S" || s_n == "s");
-                        console.clear()
+                        console.clear();
                         break;
 
                     case 2:
                         do {
-                            console.clear()
-                            console.log(`---------------------\n>> Juros Compostos <<\n---------------------`)
-                            var capI = Number(prompt("Insira o Capital Inicial:"))
-                            var taxa = Number(prompt("Insira a Taxa de Juros (em %):"))
-                            var temp = Number(prompt("Insira o Prazo (em meses):"))
+                            console.clear();
+                            console.log(`---------------------\n>> Juros Compostos <<\n---------------------`);
+                            var capI = Number(prompt("Insira o Capital Inicial: "));
+                            var taxa = Number(prompt("Insira a Taxa de Juros (em %): "));
+                            var temp = Number(prompt("Insira o Prazo (em meses): "));
 
-                            var juroVal = capI * potencia((1 + (taxa / 100)), temp)
+                            var juroVal = capI * potencia((1 + (taxa / 100)), temp);
 
-                            console.log(`----------------------------------`)
+                            console.log(`----------------------------------`);
                             console.log(`O valor do juros total será de: R$ ${juroVal.toFixed(2)}`)
-                            console.log(`----------------------------------`)
+                            console.log(`----------------------------------`);
                             console.log("Deseja realizar outra operação?");
                             console.log();
                             console.log("Digite (S) - Sim / Digite (N) - Para retornar ao menu anterior. ");
@@ -722,11 +829,9 @@ do {
                         } while (s_n == "S" || s_n == "s");
                         console.clear();
                         break;
-
                     case 0:
                         console.clear();
                         break;
-
                     default:
                         console.clear();
                         console.log('>>>>> Inválido <<<<<');
@@ -735,7 +840,6 @@ do {
                 }
             }
             break;
-
         case 0:
             setTimeout(() => {
                 console.log('>>> ALPHA CODE<<<');
@@ -743,7 +847,6 @@ do {
             }, 1000);
             console.clear();
             break;
-
         default:
             console.clear();
             console.log('>>>>> Inválido <<<<<');
