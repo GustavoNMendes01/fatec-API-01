@@ -701,7 +701,7 @@ do {
                                                 break;
                                         }
                                     }
-                                    console.log(`A conversão do Hexadecimal: ${hexad}\nCorresponde ao Binário: ${r_hexad}-h`);
+                                    console.log(`A conversão do Hexadecimal: ${hexad}\nCorresponde ao Binário: ${r_hexad}`);
                             }
                             console.log(`----------------------------------------`);
                             console.log("Deseja realizar outra conversão?");
