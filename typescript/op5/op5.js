@@ -3,6 +3,15 @@ function op55(id) {
     var myWindow = window.open('', 'Calculadora Científica', 'toolbar=0,location=0,menubar=0,width=500,height=300');
     var nomeOp = document.getElementsByTagName('a')[id].innerHTML;
     myWindow === null || myWindow === void 0 ? void 0 : myWindow.document.write("<html><head><title>".concat(nomeOp, "</title></head></html>"));
+    function leia(texto) {
+        return (myWindow === null || myWindow === void 0 ? void 0 : myWindow.prompt(texto));
+    }
+    function escreva(texto) {
+        return (myWindow === null || myWindow === void 0 ? void 0 : myWindow.alert(texto));
+    }
+    function fechar() {
+        return myWindow === null || myWindow === void 0 ? void 0 : myWindow.close();
+    }
     function concatena(str1, str2) {
         var result = '';
         // Adiciona os caracteres da primeira string
