@@ -50,7 +50,7 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 |010| Desenvolvimento do código para cálculo de Juros Simples e Juros Compostos|🟡|2|06|✅|
 |011| Reescrita dos códigos feitos para TypeScript|🟢|3|07|✅|
 |012| Avaliação do Desempenho da Equipe e Prioridades|🟢|3|12|✅|
-|013| Revisão dos códigos e testes|🟢|2|10||
+|013| Revisão dos códigos e testes|🟢|2|10|✅|
 |014| Definição de padrão de variáveis para o código|🔴|2|11|✅|
 |015| Criação de Interface em HTML para o código final em Typescript|🟢|4|09|✅|
 
@@ -83,9 +83,9 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 <br>
 
 ### Sprint 4. Finaização do Projeto
-- [ ] 012 | Avaliação do desempenhos da equipe e prioridades;
+- [X] 012 | Avaliação do desempenhos da equipe e prioridades;
 - [X] 015 | Criação de Interface em HTML para o código;
-- [ ] 011 | Finalização da escrita dos códigos em Typescript.
+- [X] 011 | Finalização da escrita dos códigos em Typescript.
 
 <br>
 
@@ -100,11 +100,11 @@ https://github.com/GustavoNMendes01/fatec-API-01/assets/93730786/79ed9b5c-0b6d-4
 # Autores do Projeto
 |    Função     | Nome                                  |                                                                                                                                                      LinkedIn & GitHub                                                                                                                                                      |
 | :-----------: | :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Product Owner |   Renan         |     [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/joaomarcosoliveiraa) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com)              |
+| Product Owner |   Renan         |     [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Renansilva242)              |
 | Scrum Master  | Felipe |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](www.linkedin.com/in/felipe-reiss) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/felpzreiz)     |
 | Dev  | Gustavo |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/gustavo-mendes-b80008234) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/gustavonmendes01)     |
-| Dev   | Ian              |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com)        |
-|  Dev  | João Victor                 |         [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com)        |
-|  Dev  | José              |   [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/)   |
-| Dev  | Matheus |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com)     |
-| Dev  | Rodrigo |      [![Linkedin Badge](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com)     |
+| Dev   | Ian              |        (https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/Joaovsnas)        |
+|  Dev  | João Victor                 |         (https://www.linkedin.com) [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/jwesleey)        |
+|  Dev  | José              |   [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/)   |
+| Dev  | Matheus |       [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/matcarmac)     |
+| Dev  | Rodrigo |      [![GitHub Badge](https://img.shields.io/badge/GitHub-111217?style=flat-square&logo=github&logoColor=white)](https://github.com/RodrigoBlaque)     |
