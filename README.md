@@ -68,24 +68,24 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 ### Sprint 2. Desenvolvimento do Projeto
 - [X] 006 | Desenvolvimento do código para operação de cálculo fatorial;
 - [X] 007 | Desenvolvimento de código para operação de segundo grau;
-- [X] 010 | Desenvolvimento de código para função de juros simples e compostos;
-- [X] 013 | Revisão e teste dos códigos;
-- [X] 014 | Definição de padrão de variáveis para o código.
+- [X] 008 | Desenvolvimento de código para função de juros simples e compostos;
+- [X] 009 | Revisão e teste dos códigos;
+- [X] 010 | Definição de padrão de variáveis para o código.
 <br>
 
 ### Sprint 3 . Desenvolvimento do Projeto
-- [X] 015 | Criação de Interface em HTML para o código;
-- [X] 008 | Desenvolvimento de código para operação de conversão de base numérica;
-- [X] 009 | Desenvolvimento de código para função de concatenação de duas strings;
-- [X] 013 | Revisão dos códigos e necessidades;
-- [X] 012 | Avaliação do desempenho da equipe e prioridades;
-- [X] 011 | Início do uso de Typescript para o desenvolvimento do produto final;
+- [X] 011 | Criação de Interface em HTML para o código;
+- [X] 012 | Desenvolvimento de código para operação de conversão de base numérica;
+- [X] 013 | Desenvolvimento de código para função de concatenação de duas strings;
+- [X] 014 | Revisão dos códigos e necessidades;
+- [X] 015 | Avaliação do desempenho da equipe e prioridades;
+- [X] 016 | Início do uso de Typescript para o desenvolvimento do produto final;
 <br>
 
 ### Sprint 4. Finaização do Projeto
-- [X] 012 | Avaliação do desempenhos da equipe e prioridades;
-- [X] 015 | Criação de Interface em HTML para o código;
-- [X] 011 | Finalização da escrita dos códigos em Typescript.
+- [X] 017 | Avaliação do desempenhos da equipe e prioridades;
+- [X] 018 | Criação de Interface em HTML para o código;
+- [X] 019 | Finalização da escrita dos códigos em Typescript;
 
 <br>
 
