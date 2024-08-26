@@ -74,18 +74,16 @@ O desenvolvimento do projeto segue a metodologia Scrum, uma metodologia ágil a 
 <br>
 
 ### Sprint 3 . Desenvolvimento do Projeto
-- [X] 011 | Criação de Interface em HTML para o código;
-- [X] 012 | Desenvolvimento de código para operação de conversão de base numérica;
-- [X] 013 | Desenvolvimento de código para função de concatenação de duas strings;
-- [X] 014 | Revisão dos códigos e necessidades;
-- [X] 015 | Avaliação do desempenho da equipe e prioridades;
-- [X] 016 | Início do uso de Typescript para o desenvolvimento do produto final;
+- [X] 011 | Desenvolvimento de código para operação de conversão de base numérica;
+- [X] 012 | Desenvolvimento de código para função de concatenação de duas strings;
+- [X] 013 | Revisão dos códigos e necessidades;
+- [X] 014 | Avaliação do desempenho da equipe e prioridades;
+- [X] 015 | Início do uso de Typescript para o desenvolvimento do produto final;
 <br>
 
 ### Sprint 4. Finaização do Projeto
-- [X] 017 | Avaliação do desempenhos da equipe e prioridades;
-- [X] 018 | Criação de Interface em HTML para o código;
-- [X] 019 | Finalização da escrita dos códigos em Typescript;
+- [X] 017 | Finalização da escrita dos códigos em Typescript;
+- [X] 018 | Avaliação do desempenhos da equipe e prioridades;
 
 <br>
 
